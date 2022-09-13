@@ -1,12 +1,18 @@
-ul {
-    list-style-type: none;
-    padding: 0px;
-    line-height: 1.5em;
+#bottombar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background-color: beige;
+    text-align: center;
 }
 
-#bottombar {
-    border-top: 1px solid #ddd;
-    position: absolute;
-    bottom: 40px;
-    background-color: beige;
+#bottombar a {
+    color: black;
+    text-decoration: none;
+}
+
+#bottombar a:hover {
+    color: #629de0;
 }
