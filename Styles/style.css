@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #bottombar {
     position: absolute;
     width: 100%;
@@ -16,19 +15,4 @@
 
 #bottombar a:hover {
     color: #629de0;
-=======
-ul 
-{
-    list-style-type: none;
-    padding: 0px;
-    line-height: 1.5em;
-}
-
-#bottombar 
-{
-    border-top: 1px solid #ddd;
-    position: absolute;
-    bottom: 40px;
-    background-color: beige;
->>>>>>> 10a4e320c5f59afdab4fd79b8e735fbc4f1e5b7c
 }
