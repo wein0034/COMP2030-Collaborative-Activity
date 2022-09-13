@@ -11,7 +11,7 @@
 
 <body>
 
-
+    <?php require_once "inc/search.inc.php"; ?>
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 
