@@ -1,0 +1,6 @@
+#bottombar {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    bottom: 40px;
+    background-color: beige;
+}
