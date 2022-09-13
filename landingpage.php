@@ -12,7 +12,7 @@
 <body>
 
 
-    <?php require_once "/bottom.php"; ?>
+    <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 
 
