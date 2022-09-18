@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>SENIOR - Login or Signup</title>
+    <title>SENIOR - New and Returning Users</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/login.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -37,6 +37,7 @@
                 </p>
 
                 <input type="submit" name="CreateAccount" id="createaccount" value="Create Account">
+                <!-- need to add in code for submission-->
             </form>
         </div>
 
@@ -57,6 +58,7 @@
                 </p>
 
                 <input type="submit" name="Signin" id="signin" value="Sign in">
+                <!-- need to add in code for submission-->
             </form>
         </div>
 

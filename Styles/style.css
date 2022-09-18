@@ -19,8 +19,23 @@ img#tent {
     padding-top: 0;
     padding: 10px;
     border-radius: 15px;
-    border-radius: 0px 0px 15px 15px ;
+    display: none;
+    overflow: hidden;
 }  
+
+.collapsible{
+    border: 0px;
+    font-weight: bold;
+    padding: 10px 25px;
+    width: 100%;
+    margin-top:20px;
+    background-color: #cfe4cd;
+    border-radius: 15px;
+}
+
+.collapsible:hover {
+    background-color: rgb(96, 134, 98);
+}
 
 input[name="Name"],[name="Email"],[name="Password"]{
     border: 1px solid #ddd;
@@ -33,22 +48,13 @@ input[name="Name"],[name="Email"],[name="Password"]{
 
 input[id="createaccount"],[id="signin"]{
     border: 0px;
-    background-color: #acc5a9;
     font-weight: bold;
     padding: 10px 25px;
     width: 100%;
     border-radius: 15px;
+    background-color: #acc5a9;
 }
 
-.collapsible{
-    border: 0px;
-    background-color: #cfe4cd;
-    font-weight: bold;
-    padding: 10px 25px;
-    margin-top:20px;
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-}
 
 input[id="createaccount"]:hover, [id="signin"]:hover {
     background-color: rgb(96, 134, 98);
@@ -58,17 +64,24 @@ input:focus{
     outline:0px;
 }
 
-
-
 p.forgotpassword{
     text-align: center;
+}
+
+.forgotpassword a{
+    text-decoration: none;
+    font-size:12px;
+    color: rgb(96, 134, 98);
+}
+
+.forgotpassword a:hover {
+    text-decoration: underline;
 }
 
 p.tos {
     font-size: 11px;
     text-align: center; 
 }
-
 
 .bottombar {
     position: fixed;
