@@ -37,7 +37,7 @@ img#tent {
     background-color: rgb(96, 134, 98);
 }
 
-input[name="Name"],[name="Email"],[name="Password"]{
+.innerlogin input[id="name"],[name="email"],[name="password"]{
     border: 1px solid #ddd;
     padding: 5px;
     margin: 5px 0px;
@@ -46,7 +46,7 @@ input[name="Name"],[name="Email"],[name="Password"]{
     border-radius: 5px;
 }
 
-input[id="createaccount"],[id="signin"]{
+.innerlogin input[id="createaccount"],[id="signin"]{
     border: 0px;
     font-weight: bold;
     padding: 10px 25px;
@@ -56,11 +56,11 @@ input[id="createaccount"],[id="signin"]{
 }
 
 
-input[id="createaccount"]:hover, [id="signin"]:hover {
+.innerlogin input[id="createaccount"]:hover, [id="signin"]:hover {
     background-color: rgb(96, 134, 98);
 }
 
-input:focus{
+.innerlogin input:focus{
     outline:0px;
 }
 
@@ -81,6 +81,34 @@ p.forgotpassword{
 p.tos {
     font-size: 11px;
     text-align: center; 
+}
+
+.listitem{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:80%;
+    background-color: #cfe4cd;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin: 30px;
+    padding: 20px;
+  }
+
+.rightcolumn{
+    text-align: center;
+}
+
+.column input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px 0px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .bottombar {
