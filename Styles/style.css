@@ -1,8 +1,53 @@
-.bottombar {
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.outerlogin {
+    width: 400px;
     position: absolute;
-    width: 100%;
-    height: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+input[name="Name"],[name="Email"],[name="Password"]{
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+input[id="createaccount"],[id="signin"]{
+    border: 0px;
+    background-color: #acc5a9;
+    font-weight: bold;
+    padding: 10px 25px;
+    width: 400px;
+}
+
+/* .signin {
+
+}  */
+
+/* input {
+
+
+} */
+
+
+p.tos {
+    text-align: center; 
+}
+
+img#tent {
+    width: 400px;
+}
+
+.bottombar {
+    position: fixed;
     bottom: 0;
+    width: 100%;
     left: 0;
     background-color: rgb(96, 134, 98);
 }
@@ -10,14 +55,12 @@
 .bottombar ul {
     list-style-type: none;
     float: left;
-    line-height: 1.5;
 }
 
 .copyright {
     position: absolute;
-    right: 20px;   
+    right: 30px;   
 }
-
 
 .bottombar a {
     color: black;
