@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Landing Page</title>
+    <title>SENIOR - Login or Signup</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
     <script src="scripts/script.js" defer></script>
@@ -20,19 +20,19 @@
             <form>
                 <p>New user? <b>Click here to create an account!</b></p>
 
-                <label><b>Name</b></br>
+                <label><b>Name</b>
                 <input type="text" name="Name" id="name" required>
                 </p>
 
-                <label><b>Email Address</b><br>
+                <label><b>Email Address</b>
                 <input type="email" name="Email" id="email" required>
                 </p>
 
-                <label><b>Password</b><br>
+                <label><b>Password</b>
                 <input type="password" name="Password" id="password" required>
                 </p>
 
-                <label><b>Confirm Password</b><br>
+                <label><b>Confirm Password</b>
                 <input type="password" name="Password" id="password" required>
                 </p>
 
@@ -44,11 +44,11 @@
             <form>
                 <p>Returning user? <b>Sign in here!</b></p>
 
-                <label><b>Email Address</b></br>
+                <label><b>Email Address</b>
                 <input type="email" name="Email" id="emailsignin" required>
                 </p>
 
-                <label><b>Password</b><br>
+                <label><b>Password</b>
                 <input type="password" name="Password" id="passwordsignin" required>
                 </p>
 
@@ -59,11 +59,10 @@
                 <input type="submit" name="Signin" id="signin" value="Sign in">
             </form>
         </div>
-    <p class="tos">By continuing, you agree to our Terms of Service and Privacy Notice.</p>
+
+        <p><a href="">Forgot your password?</a></p>
+        <p class="tos">By continuing, you agree to our Terms of Service and Privacy Notice.</p><br><br><br>
     </div>
-
-
-
 
 
     <?php require_once "inc/bottom.inc.php"; ?> 
