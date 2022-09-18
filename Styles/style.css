@@ -3,6 +3,10 @@ body {
     font-size: 14px;
 }
 
+img#tent {
+    width: 100%;
+}
+
 .outerlogin {
     width: 400px;
     position: absolute;
@@ -10,12 +14,21 @@ body {
     transform: translate(-50%, 0);
 }
 
+.innerlogin {
+    border: 1px solid #cfe4cd;
+    padding-top: 0;
+    padding: 10px;
+    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px ;
+}  
+
 input[name="Name"],[name="Email"],[name="Password"]{
     border: 1px solid #ddd;
     padding: 5px;
-    margin: 10px 0px;
-    width: 400px;
+    margin: 5px 0px;
+    width: 100%;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 input[id="createaccount"],[id="signin"]{
@@ -23,26 +36,39 @@ input[id="createaccount"],[id="signin"]{
     background-color: #acc5a9;
     font-weight: bold;
     padding: 10px 25px;
-    width: 400px;
+    width: 100%;
+    border-radius: 15px;
 }
 
-/* .signin {
+.collapsible{
+    border: 0px;
+    background-color: #cfe4cd;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-top:20px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
 
-}  */
+input[id="createaccount"]:hover, [id="signin"]:hover {
+    background-color: rgb(96, 134, 98);
+}
 
-/* input {
+input:focus{
+    outline:0px;
+}
 
 
-} */
 
+p.forgotpassword{
+    text-align: center;
+}
 
 p.tos {
+    font-size: 11px;
     text-align: center; 
 }
 
-img#tent {
-    width: 400px;
-}
 
 .bottombar {
     position: fixed;
