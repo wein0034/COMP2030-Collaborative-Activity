@@ -56,6 +56,7 @@
                 <label><p>Remember sign in details
                 <input type="checkbox" name="Remember" id="remember">
                 </p>
+                <!-- this won't acutally work, need to add in javascript pretty sure -->
 
                 <input type="submit" name="Signin" id="signin" value="Sign in">
                 <!-- need to add in code for submission-->
