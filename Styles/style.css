@@ -37,7 +37,7 @@ img#tent {
     background-color: rgb(96, 134, 98);
 }
 
-.innerlogin input[id="name"],[name="email"],[name="password"]{
+.innerlogin input{
     border: 1px solid #ddd;
     padding: 5px;
     margin: 5px 0px;
