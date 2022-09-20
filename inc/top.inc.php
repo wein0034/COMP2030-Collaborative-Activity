@@ -1,6 +1,6 @@
-<nav id="top">
-    <li><a href="">Buy</a></li>
-    <li><a href="./listitem.php">Sell</a></li>
-    <li><a href="./login.php">Log in</a></li>
-    <li><a href="">Sign up</a></li>
+<nav class="topbar">
+    <a href="">Sign up</a>
+    <a href="./login.php">Log in</a>
+    <a href="">Buy</a>
+    <a href="./listitem.php">Sell</a>
 </nav>
