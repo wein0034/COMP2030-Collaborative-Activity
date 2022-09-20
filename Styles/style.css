@@ -124,7 +124,7 @@ p.tos {
     flex: 50%;
     margin: 30px;
     padding: 20px;
-  }
+}
 
 .rightcolumn{
     text-align: center;
@@ -137,6 +137,101 @@ p.tos {
     width: 80%;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+.account{
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:80%;
+    /* background-color: #cfe4cd; */
+}
+
+.account h1{
+    text-align: center;
+    width: 100%;
+}
+
+.account h2{
+    text-align: center;
+    width: 100%;
+}
+
+.row1{
+    display: flex;
+}
+
+.leftHalf{
+    background-color: #ffffff;
+    flex: 50%;
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#productName{
+    flex: 50%;
+    float: left;
+}
+
+#productPrice{
+    flex: 50%;
+    float: right;
+}
+
+#productDescription{
+    text-align: justify;
+    float: left;
+}
+
+.rightHalf{
+    float: right;
+    background-color: #ffffff;
+    flex: 50%;
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.row2{
+    display: flex;
+}
+
+.leftHalfR2{
+    background-color: #ffffff;
+    flex: 50%;
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: flex;
+    align-items: center;
+}
+
+.rightHalfR2{
+    background-color: #ffffff;
+    flex: 50%;
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: flex;
+    align-items: center;
+}
+
+#row2Tittle{
+    width: 92%;
+    float: left;
+    text-align: left;
+}
+
+.favouriteIcon{
+    width: 8%;
+    margin: 10px;
+}
+
+.settingIcon{
+    width: 8%;
+    margin: 10px;
 }
 
 .bottombar {
