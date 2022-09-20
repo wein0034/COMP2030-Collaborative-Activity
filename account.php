@@ -11,7 +11,6 @@
 <body>
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
-    <br><br><br><br><br>
 
     <div class="account">
         <p><h1>Account</h1><p>

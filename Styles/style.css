@@ -7,6 +7,7 @@ body {
 .topbar{
     overflow: hidden;
     background-color: #333;
+    margin-bottom: 100px;
 }
 
 .topbar a {
