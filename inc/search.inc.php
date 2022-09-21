@@ -1,6 +1,6 @@
 <div class="searchBar">
-<form>
+<form action="searchresults.php" method="GET">
     <input type="text" id="searchQuery" name="searchQuery">
-    <input type="submit" value="Search!">
+    <input type="submit" value="Search">
 </form>
 </div>

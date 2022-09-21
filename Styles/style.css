@@ -33,7 +33,8 @@ body {
 }
 
 img#tent {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .outerlogin {
@@ -261,4 +262,128 @@ p.tos {
 
 .bottombar a:hover {
     color: #acc5a9;
+}
+
+/* Search Results */
+
+.searchItem
+{
+    margin: 0px 75px 25px 75px;
+}
+
+.collapsible.sr
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#srInner {
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 75px;
+
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+#srIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+#srIcon img
+{
+    border-radius: 25%;
+    max-height: 75px;
+}
+
+#srText {
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+#srText h1
+{
+    padding: 3px;
+    margin: 3px;
+}
+
+#srText h3
+{
+    padding: 3px;
+    margin: 3px;
+}
+
+#srText\ itemName
+{
+    height: 50%;
+    width: 100%;
+}
+
+#srText hr
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#srText\ info
+{
+    height: 50%;
+    
+    width: 100%;
+    display: flex;
+}
+
+#srText\ category
+{
+    width: 50%;
+    text-align: left;
+}
+
+#srText\ sellerName
+{
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+#srRating {
+    width: 20%;
+    height: 100%;
+    text-align: right;
+    
+  display: inline-block;
+}
+
+#srPrice {
+    width: 20%;
+    height: 100%;
+    text-align: right;
+}
+
+#srToggle {
+    width: 10%;
+    height: 100%;
+}
+
+.searchresult
+{
+    border: 1px solid #cfe4cd;
+    padding-top: 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+    overflow: hidden;
+
+    height: 425px;
 }
