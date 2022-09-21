@@ -1,4 +1,5 @@
 var allowMultipleExpanded = new Boolean(true);
+var startCollapsed = new Boolean(true);
 var collapsibles;
 
 Init()
@@ -11,14 +12,22 @@ function Init()
   {
     collapsibles[i].addEventListener("click", function () { ToggleCollapse(event.target) });  // ToggleCollapse loaded from collapsiblemenu.js
   }
+
+  // set every collapsible item to the default state based on 'startCollapsed'
+  for (var i = 0; i < collapsibles.length; i++) 
+  {
+    SetCollapse(collapsibles[i], startCollapsed);
+  }
 }
 
 function ToggleCollapse(elem) 
 {
+  elem = FindCollapsable(elem);
+
   // toggle whether the element passed as a parameter (elem) is currently collapsed
   elem.classList.toggle("active");
   var content = elem.nextElementSibling;
-  if (content.style.display === "block")
+  if (content.style.display == "block")
   {
     content.style.display = "none";
   }
@@ -28,7 +37,7 @@ function ToggleCollapse(elem)
   }
 
   // if only one element should be expanded at once, iterate through every other element and set it to be collapsed
-  if (!allowMultipleExpanded)
+  if (allowMultipleExpanded == false)
   {
     for (var i = 0; i < collapsibles.length; i++) 
     {
@@ -68,4 +77,25 @@ function SetAllowMultipleExpanded(set)
   {
     allowMultipleExpanded = false;
   }
+}
+
+// iterate up the element heirarchy until an element with collapsible is found, then return that element
+// this is required because nextElementSibling is used above to select the element to show/hide, and if an element that is a child of the element with collapsible is clicked, the toggled element will be one of its siblings instead of the correct element
+function FindCollapsable(elem)
+{
+  var original = elem;
+
+  while (!elem.classList.contains("collapsible"))
+  {
+    if (elem.parentElement != null)
+    {
+      elem = elem.parentElement;
+    }
+    else
+    {
+      return original
+    }
+  }
+
+  return elem;
 }
