@@ -5,14 +5,50 @@
     <title>SENIOR - Shopping and Exchange for Nomads Interested in Outdoor Recreation</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
-    <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <?php require_once "inc/top.inc.php"; ?> 
-
     <?php require_once "inc/search.inc.php"; ?>
+    <div id="landingPage">
+        <h1>I'm looking for...</h1>
+        <div id="indexButtons">
+            
+            <form action="searchresults.php?searchQuery=Vehicles" method="GET">
+                <button type="submit"  class="indexButton">
+                    <img class="buttonImage" id="Vehicles" src="images/addphoto.png">
+                    <h2>Vehicles</h2>
+                </button>
+            </form>
+
+            <form action="searchresults.php?searchQuery=Furniture" method="GET">
+                <button class="indexButton">
+                    <img class="buttonImage" id="Furniture" src="images/addphoto.png">
+                    <h2>Furniture</h2>
+                </button>
+            </form>
+
+            <form action="searchresults.php?searchQuery=Supplies" method="GET">
+                <button class="indexButton">
+                    <img class="buttonImage" id="Supplies" src="images/addphoto.png">
+                    <h2>Supplies</h21>
+                </button>
+            </form>
+
+            <form action="searchresults.php?searchQuery=Services" method="GET">
+                <button class="indexButton">
+                    <img class="buttonImage" id="Services" src="images/addphoto.png">
+                    <h2>Services</h2>
+                </button>
+            </form>
+        </div>
+
+        <div id="searchBar">
+
+        </div>
+    </div>
+
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 
