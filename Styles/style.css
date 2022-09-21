@@ -376,14 +376,66 @@ p.tos {
     height: 100%;
 }
 
+
+/* ---- search result content */
+
 .searchresult
 {
     border: 1px solid #cfe4cd;
     padding-top: 0;
     padding: 10px;
-    border-radius: 15px;
-    display: none;
+    border-radius: 10px;
+    display: flex;
     overflow: hidden;
 
     height: 425px;
+}
+
+#contentImage
+{
+    max-height: 80%;
+}
+
+
+#contentImage img
+{    
+    border-radius: 10px;
+}
+
+#contentDetails
+{
+    padding: 0px 10px 0px 10px;
+}
+
+#contentText
+{    
+    height: 66%;
+}
+
+#contentReviews
+{
+    height: 33%;
+    display: flex;
+    text-align: center;
+
+}
+
+#itemReviews
+{
+    flex-basis: 50%;
+}
+
+#sellerReviews
+{
+    flex-basis: 50%;
+}
+
+#contentButtons
+{
+    
+}
+
+.contentButton
+{
+    width: 100px;
 }
