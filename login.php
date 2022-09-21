@@ -5,7 +5,8 @@
     <title>SENIOR - New and Returning Users</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
-    <script src="scripts/collapsiblemenu.js" defer></script>
+    <script src="scripts/helperfunctions.js" defer></script>
+    <script src="scripts/login.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
