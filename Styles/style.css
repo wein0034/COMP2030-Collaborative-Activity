@@ -50,6 +50,7 @@ img#tent {
     border-radius: 15px;
     display: none;
     overflow: hidden;
+    height: 310px;      /* this needs to be made auto somehow so that the login and sign up are the same height */
 }  
 
 .collapsible{
