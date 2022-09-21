@@ -439,3 +439,48 @@ p.tos {
 {
     width: 100px;
 }
+
+/* Index/Landing Page */
+
+#landingPage
+{
+    padding: 50px 100px;
+}
+
+#landingPage h1
+{
+    font-size: 50px;
+}
+#landingPage h2
+{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#indexButtons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexButton
+{
+    margin: 50px;
+
+    border-radius: 25%;
+    border-width:5px;
+
+    background-color: white;
+}
+
+.indexButton:hover
+{
+    background-color:aquamarine;
+}
+
+.buttonImage
+{
+    max-width: 75%;
+    max-height: 75%;
+
+}
