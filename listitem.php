@@ -21,18 +21,30 @@
             <label><b>Title</b></label><br>
             <input type="text" id="title" required><p></p>
 
-            <label><b>Price</b></label><br>
-            <input type="text" id="price" min=0.05 type="number" required value="$"><p></p>
-
-            <label><b>Category</b></label><br>
-            <input type="text" id="category" required><p></p>
-
-            <label><b>Condition</b></label>
-            <input type="radio" name="condition" id="new" value="New">
-            <label for="new">New</label>
-            <input type="radio" name="condition" id="used" value="Used">
-            <label for="used">Used</label>
-            <p></p>
+            <div class="sellpricecondition">
+                <div id="sellprice">
+                    <label><b>Price</b></label><br>
+                    <input type="text" id="price" min=0.05 type="number" required value="$">
+                </div>
+                <div id="sellcondition">
+                    <label><b>Condition</b></label><br>
+                    <input type="radio" name="condition" id="new" value="New">
+                    <label for="new">New</label>
+                    <input type="radio" name="condition" id="used" value="Used">
+                    <label for="used">Used</label>
+                    <p></p>
+                </div>
+            </div>
+        
+            <label for="category"><b>Category</b></label><br>
+            <select name="category" id="category" required>
+                <option value="vehicle">Select Option</option>
+                <option value="vehicle">Vehicle</option>
+                <option value="furniture">Furniture</option>
+                <option value="supplies">Supplies</option>
+                <option value="services">Services</option>
+        </select>
+        <p><p>
 
             <label><b>Location</b></label><br>
             <input type="text" id="location" required><p></p>
