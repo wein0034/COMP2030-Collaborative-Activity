@@ -211,7 +211,7 @@ input[type="radio"] {
     flex: 50%;
     margin: 30px;
     padding: 40px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
 }
 
 #productName{
@@ -235,7 +235,7 @@ input[type="radio"] {
     flex: 50%;
     margin: 30px;
     padding: 40px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
 }
 
 .row2{
@@ -247,7 +247,7 @@ input[type="radio"] {
     flex: 50%;
     margin: 30px;
     padding: 40px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
     display: flex;
     align-items: center;
 }
@@ -257,7 +257,7 @@ input[type="radio"] {
     flex: 50%;
     margin: 30px;
     padding: 40px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
     display: flex;
     align-items: center;
 }
