@@ -13,7 +13,7 @@
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 
-    <div class="listitem">
+    <div class="item">
         <div class="column">
 
         <h1>Item for sale</h1><br>

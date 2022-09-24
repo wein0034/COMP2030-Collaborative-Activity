@@ -94,7 +94,7 @@ img#tent {
     background-color: rgb(96, 134, 98);
 }
 
-.innerlogin input:focus, .listitem input:focus{
+.innerlogin input:focus, .item input:focus{
     outline:0px;
 }
 
@@ -119,11 +119,11 @@ p.tos {
 
 /* Lits item page */
 
-.listitem{
+.item {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 60%;
+    width: 90%;
     display: flex;
     background-color: #cfe4cd;
     border-radius: 30px;
@@ -137,6 +137,7 @@ p.tos {
 
 .rightcolumn{
     text-align: center;
+    overflow: hidden;
 }
 
 .column input, #description, #category {
@@ -280,9 +281,10 @@ input[type="radio"] {
 
 .bottombar {
     position: fixed;
+    overflow: hidden;
     bottom: 0;
-    width: 100%;
     left: 0;
+    width: 100%;
     background-color: rgb(96, 134, 98);
 }
 
