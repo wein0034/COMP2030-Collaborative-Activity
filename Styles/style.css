@@ -118,7 +118,7 @@ img#kettle {
     width: 5%;
 }
 
-#signin, #createaccount, #publish {
+#signin, #createaccount, #publish, #buy {
     border: 0px;
     font-weight: bold;
     font-size: 16px;
@@ -134,7 +134,7 @@ img#kettle {
     font-size: 16px;
 }
 
-#signin:hover, #createaccount:hover, #publish:hover {
+#signin:hover, #createaccount:hover, #publish:hover, #buy:hover {
     background-color: rgb(96, 134, 98);
 }
 
@@ -221,7 +221,7 @@ img#addphoto-sml:hover, img#addphoto-lrg:hover{
     background-color: #acc5a9;
 }
 
-#publish {
+#publish, #buy {
     width: 250px;
 }
 
@@ -258,6 +258,52 @@ input[type="radio"] {
 .image-upload>input {
     display: none;
   }
+
+/* View item page */
+
+.view-imgs {
+    text-align: center;
+}
+
+#viewimg-lrg {
+    width: 600px;
+}
+
+#viewimg-sml {
+    width: 170px;
+    padding: 10px;
+}
+
+.condition {
+    flex: 30%;
+    text-align: left;
+    float: left;
+    padding-top: 10px;
+}
+
+.location {
+    flex: 60%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#inline {
+    display: inline;
+}
+
+
+#view-rightcol {
+    flex: 70%;
+}
+
+.view-leftdiv {
+    float: left;
+}
+
+.view-rightdiv {
+    text-align: right;
+}
+
 
 
 /* Account page */

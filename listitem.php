@@ -84,8 +84,8 @@
                     <!-- can maybe add in the above javascript under 'examples' towards the end of the page to give preview of image -->
                 
             </div>
+            </form>
         </div>
-
     </div>
 
 
