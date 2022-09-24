@@ -16,14 +16,29 @@
     <div class="listitem">
         <div class="column">
 
-        <p><h1>Item for sale</h1><p>
+        <h1>Item for sale</h1><br>
         <form>
-            <p><input type="text" id="title" value="Title" required></p>
-            <p><input type="text" id="price" min=0.05 type="number" required></p>
-            <p><input type="text" id="category" value="Category" required></p>
-            <p><input type="text" id="condition" value="Condition" required></p>
-            <p><input type="text" id="location" value="Location" required></p>
-            <p><textarea name="Description" id="description" rows="5" required>Description</textarea></p>
+            <label><b>Title</b></label><br>
+            <input type="text" id="title" required><p></p>
+
+            <label><b>Price</b></label><br>
+            <input type="text" id="price" min=0.05 type="number" required value="$"><p></p>
+
+            <label><b>Category</b></label><br>
+            <input type="text" id="category" required><p></p>
+
+            <label><b>Condition</b></label>
+            <input type="radio" id="new" value="New">
+            <label for="new">New</label>
+            <input type="radio" id="used" value="Used">
+            <label for="used">Used</label>
+            <p></p>
+
+            <label><b>Location</b></label><br>
+            <input type="text" id="location" required><p></p>
+
+            <label><b>Description</b></label><br>
+            <p><textarea name="Description" id="description" rows="5" required>Description</textarea><p></p>
 
         </div>
 

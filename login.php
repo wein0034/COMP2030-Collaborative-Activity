@@ -24,19 +24,19 @@
         
         <div class="innerlogin">
             <form>
-                <label><b>Name</b>
+                <label><b>Name</b></label>
                 <input type="text" name="Name" id="name" required>
                 </p>
 
-                <label><b>Email Address</b>
+                <label><b>Email Address</b></label>
                 <input type="email" name="Email" id="email" required>
                 </p>
 
-                <label><b>Password</b>
+                <label><b>Password</b></label>
                 <input type="password" name="Password" id="password" minlength="8" required>
                 </p>
 
-                <label><b>Confirm Password</b>
+                <label><b>Confirm Password</b></label>
                 <input type="password" name="Password" id="password" required>
                 </p>
 
@@ -72,7 +72,7 @@
     </div>
 
 
-    <?php require_once "inc/bottom.inc.php"; ?> 
+   <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 
 </html>
