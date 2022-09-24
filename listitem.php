@@ -28,9 +28,9 @@
             <input type="text" id="category" required><p></p>
 
             <label><b>Condition</b></label>
-            <input type="radio" id="new" value="New">
+            <input type="radio" name="condition" id="new" value="New">
             <label for="new">New</label>
-            <input type="radio" id="used" value="Used">
+            <input type="radio" name="condition" id="used" value="Used">
             <label for="used">Used</label>
             <p></p>
 
@@ -38,7 +38,8 @@
             <input type="text" id="location" required><p></p>
 
             <label><b>Description</b></label><br>
-            <p><textarea name="Description" id="description" rows="5" required>Description</textarea><p></p>
+            <textarea name="Description" id="description" data-val-length-min="20" 
+                data-val-required = "Please enter a description." required></textarea><p></p>
 
         </div>
 
@@ -48,8 +49,8 @@
             <img src="images/addphoto.png" width=100px>
             <img src="images/addphoto.png" width=100px>
             <img src="images/addphoto.png" width=100px>
-            <input type="submit" id="savedraft" value="Save Draft">
-            <input type="submit" id="publish" value="Publish">
+            <p><input type="submit" id="savedraft" value="Save Draft"></p>
+            <p><input type="submit" id="publish" value="Publish"></p>
             </div>
         </div>
 

@@ -4,6 +4,8 @@ body {
     margin: 0px;
 }
 
+/* Top Bar & Search Bar*/
+
 .topbar{
     overflow: hidden;
     background-color: #333;
@@ -31,6 +33,7 @@ body {
     margin-right: 16px;
     border: none;
 }
+/* Login page */
 
 img#tent {
     max-width: 100%;
@@ -84,14 +87,14 @@ img#tent {
     width: 100%;
     border-radius: 15px;
     background-color: #acc5a9;
+    outline:0px;
 }
-
 
 .innerlogin input[id="createaccount"]:hover, [id="signin"]:hover {
     background-color: rgb(96, 134, 98);
 }
 
-.innerlogin input:focus{
+.innerlogin input:focus, .listitem input:focus{
     outline:0px;
 }
 
@@ -114,6 +117,8 @@ p.tos {
     text-align: center; 
 }
 
+/* Lits item page */
+
 .listitem{
     position: absolute;
     left: 50%;
@@ -133,14 +138,30 @@ p.tos {
     text-align: center;
 }
 
-.column input {
+.column input, #description {
     border: 1px solid #ddd;
     padding: 5px;
     margin: 5px 0px;
     width: 80%;
     box-sizing: border-box;
     border-radius: 5px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+#description {
+    resize: none;
+    height: 150px;
+    outline:0px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    margin-left: 30px;
+}
+
+
+/* Account page */
 
 .account{
     position: absolute;
