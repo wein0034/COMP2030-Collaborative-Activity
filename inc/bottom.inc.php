@@ -6,6 +6,6 @@
     <a href="./sitemap.php">Site Map</a></ul>
 </div>
 <div id="rightfooter">
-    © 2022, SENIOR, Inc.
+    &copy; 2022, SENIOR, Inc.
 </div>
 </nav>

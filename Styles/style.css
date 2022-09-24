@@ -1,8 +1,15 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin: 0px;
+    font-size: 16px;
     padding-top: 80px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
 }
 
 /* Top Bar & Search Bar*/
@@ -40,17 +47,35 @@ body {
 }
 /* Login page */
 
+.item, .outerlogin {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    display: flex;
+}
+
+.outerlogin {
+    width: 60%;
+}
+
 img#tent {
     max-width: 100%;
     max-height: 100%;
 }
 
-.outerlogin {
-    width: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+img#kettle {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
 }
+
+.small-col {
+    flex: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
 
 .innerlogin {
     border: 1px solid #cfe4cd;
@@ -59,8 +84,9 @@ img#tent {
     border-radius: 15px;
     display: none;
     overflow: hidden;
-    height: 310px;      /* this needs to be made auto somehow so that the login and sign up are the same height */
+    /* height: 310px;      this needs to be made auto somehow so that the login and sign up are the same height */
 }  
+
 
 .collapsible{
     border: 0px;
@@ -81,23 +107,35 @@ img#tent {
     padding: 5px;
     margin: 5px 0px;
     width: 100%;
+    height: 2.5em;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
-.innerlogin input[id="createaccount"],[id="signin"]{
-    border: 0px;
-    font-weight: bold;
-    padding: 10px 25px;
-    width: 100%;
-    border-radius: 15px;
-    background-color: #acc5a9;
-    outline:0px;
+.innerlogin input[type="checkbox"] {
+    height: 100%;
+    width: 5%;
 }
 
-.innerlogin input[id="createaccount"]:hover, [id="signin"]:hover {
+#signin, #createaccount {
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #acc5a9;
+    outline: 0px;
+    border-radius: 15px;
+}
+
+#loginsignup {
+    font-size: 16px;
+}
+
+#signin:hover, #createaccount:hover {
     background-color: rgb(96, 134, 98);
 }
+
 
 .innerlogin input:focus, .item input:focus{
     outline:0px;
@@ -122,14 +160,10 @@ p.tos {
     text-align: center; 
 }
 
-/* Lits item page */
+/* List item page */
+
 
 .item {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 90%;
-    display: flex;
     background-color: #cfe4cd;
     border-radius: 30px;
 }
@@ -285,38 +319,14 @@ input[type="radio"] {
 }
 
 /* bottombar */
-/* 
-.topbar{
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-}
-
-.topbar a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topbar a:hover {
-    background-color:  #acc5a9;
-    color: white;
-} */
 
 .bottombar {
     overflow: hidden;
     background-color: rgb(96, 134, 98);
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
 }
 
 #leftfooter {

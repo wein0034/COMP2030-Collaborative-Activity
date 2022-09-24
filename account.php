@@ -13,6 +13,7 @@
     <?php require_once "inc/search.inc.php"; ?>
 
     <div class="account">
+        <div id="content-wrap">
         <p><h1>Account</h1><p>
         <div class="row1">
             <div class="leftHalf">
@@ -48,9 +49,9 @@
 
         </div>
     </div>
+</div>
 
-
-    <?php require_once "inc/bottom.inc.php"; ?> 
+    <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 
 </html>
