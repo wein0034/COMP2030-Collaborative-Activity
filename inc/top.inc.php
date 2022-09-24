@@ -5,7 +5,7 @@
     <a href="./login.php?returning=true">Log in</a>
 
     <?php require_once "inc/search.inc.php"; ?>
-    <a href="">Buy</a>
+    <a href="./index.php">Buy</a>
     <a href="./listitem.php">Sell</a>
     
 </nav>

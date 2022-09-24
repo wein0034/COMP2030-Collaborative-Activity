@@ -62,10 +62,6 @@
                 <button type="submit" class="contentButton">Add to Cart</button>
                 <button type="submit" class="contentButton">View more info</button>
             </div>
-            
         </div>
     </div>
 </div>
-
-
-
