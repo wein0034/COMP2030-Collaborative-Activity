@@ -15,29 +15,23 @@
         <h1>I'm looking for...</h1>
         <div id="indexButtons">
             
-            <form action="searchresults.php?searchQuery=Vehicles" method="GET">
-                <button type="submit"  class="indexButton">
+            <form action="searchresults.php" method="GET">
+                <button type="submit"  class="indexButton" name="searchQuery" value="Vehicles">
                     <img class="buttonImage" id="Vehicles" src="images/addphoto.png">
                     <h2>Vehicles</h2>
                 </button>
-            </form>
 
-            <form action="searchresults.php?searchQuery=Furniture" method="GET">
-                <button class="indexButton">
+                <button type="submit"  class="indexButton" name="searchQuery" value="Furniture">
                     <img class="buttonImage" id="Furniture" src="images/addphoto.png">
                     <h2>Furniture</h2>
                 </button>
-            </form>
 
-            <form action="searchresults.php?searchQuery=Supplies" method="GET">
-                <button class="indexButton">
+                <button type="submit"  class="indexButton" name="searchQuery" value="Supplies">
                     <img class="buttonImage" id="Supplies" src="images/addphoto.png">
                     <h2>Supplies</h21>
                 </button>
-            </form>
 
-            <form action="searchresults.php?searchQuery=Services" method="GET">
-                <button class="indexButton">
+                <button type="submit"  class="indexButton" name="searchQuery" value="Services">
                     <img class="buttonImage" id="Services" src="images/addphoto.png">
                     <h2>Services</h2>
                 </button>
