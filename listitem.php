@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="listitem-background">
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 
+    <div class="forsale">
+        <h1>List item for sale</h1>
+    </div>
+
     <div class="item">
         <div class="column">
-
-        <h1>Item for sale</h1><br>
+        <!-- <h1 class="forsale">List item for sale</h1><br> -->
         <form>
             <label><b>Title</b></label><br>
             <input type="text" id="title" required><p></p>
@@ -56,13 +59,30 @@
         </div>
 
         <div class="column">
-            <div class="rightcolumn">        
-            <img src="images/addphoto.png" width=300px><br>
-            <img src="images/addphoto.png" width=100px>
-            <img src="images/addphoto.png" width=100px>
-            <img src="images/addphoto.png" width=100px>
-            <p><input type="submit" id="savedraft" value="Save Draft"></p>
-            <p><input type="submit" id="publish" value="Publish"></p>
+            <div class="rightcolumn"> 
+
+                <div class="image-upload">
+                    <label for="file-input">
+                        <img src="images/addphoto.png" id="addphoto-lrg">
+                    </label>
+                <input id="file-input" type="file"><br>
+                <label for="file-input2">
+                        <img src="images/addphoto.png" id="addphoto-sml">
+                    </label>
+                <input id="file-input2" type="file">
+                <label for="file-input3">
+                        <img src="images/addphoto.png" id="addphoto-sml">
+                    </label>
+                <input id="file-input3" type="file">
+                <label for="file-input4">
+                        <img src="images/addphoto.png" id="addphoto-sml">
+                    </label>
+                <input id="file-input4" type="file">
+                </div>
+                <p><input type="submit" id="publish" value="Publish"></p>
+                    <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file-->
+                    <!-- can maybe add in the above javascript under 'examples' towards the end of the page to give preview of image -->
+                
             </div>
         </div>
 

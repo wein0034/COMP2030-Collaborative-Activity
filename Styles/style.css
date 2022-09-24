@@ -6,7 +6,7 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    padding-top: 80px;
+    padding-top: 100px;
     position: relative;
     margin: 0;
     min-height: 100%;
@@ -51,7 +51,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 90%;
+    width: 70%;
     display: flex;
 }
 
@@ -68,6 +68,7 @@ img#kettle {
     max-width: 100%;
     max-height: 100%;
     float: right;
+    border-radius: 30px;
 }
 
 .small-col {
@@ -88,7 +89,7 @@ img#kettle {
 }  
 
 
-.collapsible{
+.collapsible {
     border: 0px;
     font-weight: bold;
     padding: 10px 25px;
@@ -112,12 +113,12 @@ img#kettle {
     border-radius: 5px;
 }
 
-.innerlogin input[type="checkbox"] {
+.innerlogin input[type="checkbox"]{
     height: 100%;
     width: 5%;
 }
 
-#signin, #createaccount {
+#signin, #createaccount, #publish {
     border: 0px;
     font-weight: bold;
     font-size: 16px;
@@ -125,14 +126,15 @@ img#kettle {
     width: 100%;
     background-color: #acc5a9;
     outline: 0px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
+
 
 #loginsignup {
     font-size: 16px;
 }
 
-#signin:hover, #createaccount:hover {
+#signin:hover, #createaccount:hover, #publish:hover {
     background-color: rgb(96, 134, 98);
 }
 
@@ -160,18 +162,29 @@ p.tos {
     text-align: center; 
 }
 
+
 /* List item page */
+
+.forsale {
+    flex: 50%;
+    text-align: center;
+}
 
 
 .item {
-    background-color: #cfe4cd;
+    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
+    overflow: hidden;
+    background-color: #fff;
     border-radius: 30px;
+}
+
+.listitem-background {
+    background-color: #ebf5ea;
 }
 
 .column {
     flex: 50%;
-    margin: 20px;
-    padding: 20px;
+    padding: 50px 20px; 
 }
 
 .rightcolumn{
@@ -180,7 +193,8 @@ p.tos {
 }
 
 .column input, #description, #category {
-    border: 1px solid rgb(126, 126, 126);
+    border: 1px solid #ddd;
+    background-color: #fff;
     padding: 5px;
     margin: 5px 0px;
     width: 100%;
@@ -188,17 +202,39 @@ p.tos {
     border-radius: 5px;
     font-size: 14px;
     font-family: Helvetica, Arial, sans-serif;
+    height: 2.5em;
+}
+
+img#addphoto-sml, img#addphoto-lrg {
+    border-radius: 15px;
+}
+
+img#addphoto-sml{
+    width:100px;
+}
+
+img#addphoto-lrg{
+    width:250px;
+}
+
+img#addphoto-sml:hover, img#addphoto-lrg:hover{
+    background-color: #acc5a9;
+}
+
+#publish {
+    width: 250px;
 }
 
 #description {
     resize: none;
-    height: 150px;
-    outline:0px;
+    height: 100px;
+    outline: 0px;
 }
 
 input[type="radio"] {
     width: 20px;
     margin-top: 15px;
+    height:100%;
 }
 
 #price {
@@ -207,18 +243,21 @@ input[type="radio"] {
 
 .sellpricecondition{
     position: relative;
-
 }
 
 #sellprice {
-    width: 60%;
+    width: 55%;
     float: left;
 }
 
 #sellcondition{
-    width: 40%;
+    width: 45%;
     float: left;
 }
+
+.image-upload>input {
+    display: none;
+  }
 
 
 /* Account page */
