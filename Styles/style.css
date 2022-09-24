@@ -10,7 +10,11 @@ body {
 .topbar{
     overflow: hidden;
     background-color: #333;
-    margin-bottom: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 .topbar a {
