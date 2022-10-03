@@ -11,6 +11,7 @@
 <body>
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
+    
     <div id="landingPage">
         <h1>I'm looking for...</h1>
         <div id="indexButtons">

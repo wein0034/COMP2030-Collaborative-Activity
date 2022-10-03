@@ -38,15 +38,16 @@
                     <p></p>
                 </div>
             </div>
+            
         
-            <label for="category"><b>Category</b></label><br>
+           <label for="category"><b>Category</b><br>
             <select name="category" id="category" required>
                 <option value="selectoption" selected>Select Option</option>
                 <option value="vehicle">Vehicle</option>
                 <option value="furniture">Furniture</option>
                 <option value="supplies">Supplies</option>
                 <option value="services">Services</option>
-        </select>
+            </select>
         <p><p>
 
             <label><b>Location</b></label><br>
@@ -54,7 +55,7 @@
 
             <label><b>Description</b></label><br>
             <textarea name="Description" id="description" data-val-length-min="20" 
-                data-val-required = "Please enter a description." required></textarea><p></p>
+                data-val-required = "Please enter a description." required></textarea>
 
         </div>
 
@@ -83,7 +84,7 @@
                     <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file-->
                     <!-- can maybe add in the above javascript under 'examples' towards the end of the page to give preview of image -->
                 
-            </div>
+                    </div>
             </form>
         </div>
     </div>

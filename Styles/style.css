@@ -118,7 +118,7 @@ img#kettle {
     width: 5%;
 }
 
-#signin, #createaccount, #publish, #buy {
+#login, #register, #publish, #buy {
     border: 0px;
     font-weight: bold;
     font-size: 16px;
@@ -134,7 +134,7 @@ img#kettle {
     font-size: 16px;
 }
 
-#signin:hover, #createaccount:hover, #publish:hover, #buy:hover {
+#login:hover, #register:hover, #publish:hover, #buy:hover {
     background-color: rgb(96, 134, 98);
 }
 
@@ -160,6 +160,14 @@ p.forgotpassword{
 p.tos {
     font-size: 11px;
     text-align: center; 
+}
+
+p.success,
+p.error {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -188,8 +196,8 @@ p.tos {
 }
 
 .rightcolumn{
-    text-align: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .column input, #description, #category {
@@ -210,11 +218,11 @@ img#addphoto-sml, img#addphoto-lrg {
 }
 
 img#addphoto-sml{
-    width:100px;
+    width:150px;
 }
 
 img#addphoto-lrg{
-    width:250px;
+    width:400px;
 }
 
 img#addphoto-sml:hover, img#addphoto-lrg:hover{
@@ -246,18 +254,20 @@ input[type="radio"] {
 }
 
 #sellprice {
-    width: 55%;
+    width: 50%;
     float: left;
 }
 
 #sellcondition{
-    width: 45%;
-    float: left;
+    width: 50%;
+    /* float:left; */
 }
+
 
 .image-upload>input {
     display: none;
   }
+
 
 /* View item page */
 
@@ -413,12 +423,10 @@ input[type="radio"] {
 
 /* Global Stylings */
 label {
-    display: block;
     margin-bottom: 0.5rem;
 }
 
 input {
-    display: block;
     width: 97%;
     padding: 0.75rem;
     border: 1px solid #ccc;
