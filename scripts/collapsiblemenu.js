@@ -1,5 +1,5 @@
-var allowMultipleExpanded = new Boolean(true);
-var startCollapsed = new Boolean(true);
+var allowMultipleExpanded = false;
+var startCollapsed = true;
 var collapsibles;
 
 Init()
