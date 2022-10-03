@@ -1,3 +1,40 @@
+<?php
+    session_start();
+    include('inc/dbconn.inc.php');
+
+    if (isset($_POST['publish'])) {
+        $title = $_POST['title'];
+        $price = $_POST['price'];
+        $cond = $_POST['cond'];
+        $category = $_POST['category'];
+        $location = $_POST['location'];
+        $description = $_POST['description'];
+
+        $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
+        $query->bindParam("title", $title, PDO::PARAM_STR);
+        $query->execute();
+        if ($query->rowCount() == 0) {
+            $query = $connection->prepare("INSERT INTO products(title, price, cond, category, location, description) 
+                VALUES (:title,:price,:cond,:category,:location,:description)");
+            $query->bindParam("title", $title, PDO::PARAM_STR);
+            $query->bindParam("price", $price, PDO::PARAM_STR);
+            $query->bindParam("cond", $cond, PDO::PARAM_STR);
+            $query->bindParam("category", $category, PDO::PARAM_STR);
+            $query->bindParam("location", $location, PDO::PARAM_STR);
+            $query->bindParam("description", $description, PDO::PARAM_STR);
+
+            $result = $query->execute();
+            if ($result) {
+                echo '<p class="success">Item listed!</p>'; 
+                // go to the item listing page
+            } else {
+                echo '<p class="error">Something went wrong, try again later.</p>';
+            }
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,20 +57,20 @@
 
     <div class="item">
         <div class="column">
-        <form>
+        <form action="" method="POST">
             <label><b>Title</b></label><br>
-            <input type="text" id="title" required><p></p>
+            <input type="text" name="title" id="title" required><p></p>
 
             <div class="sellpricecondition">
                 <div id="sellprice">
-                    <label><b>Price</b></label><br>
-                    <input type="text" id="price" min=0.05 type="number" required value="$">
+                    <label><b>Price ($)</b></label><br>
+                    <input type="text"  name="price" id="price" min=0.05 type="number" required>
                 </div>
                 <div id="sellcondition">
                     <label><b>Condition</b></label><br>
-                    <input type="radio" name="condition" id="new" value="New">
+                    <input type="radio" name="cond" id="new" value="New">
                     <label for="new">New</label>
-                    <input type="radio" name="condition" id="used" value="Used">
+                    <input type="radio" name="cond" id="used" value="Used">
                     <label for="used">Used</label>
                     <p></p>
                 </div>
@@ -50,10 +87,10 @@
         <p>
 
             <label><b>Location</b></label><br>
-            <input type="text" id="location" required><p></p>
+            <input type="text" id="location" name="location" required><p></p>
 
             <label><b>Description</b></label><br>
-            <textarea name="Description" id="description" data-val-length-min="20" 
+            <textarea name="description" id="description" data-val-length-min="20" 
                 data-val-required = "Please enter a description." required></textarea>
 
         </div>
@@ -83,7 +120,7 @@
                 <input id="file-input4" type="file" accept="image/jpeg, image/png, image/jpg">
                 </div>
 
-                <p><input type="submit" id="publish" value="Publish"></p>
+                <p><input type="submit" id="publish" name="publish" value="Publish"></p>
                     <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file-->
                     <!-- can maybe add in the above javascript under 'examples' towards the end of the page to give preview of image -->
                 
