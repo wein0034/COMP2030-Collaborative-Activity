@@ -37,6 +37,13 @@ input[type="submit"]:hover, button:hover {
 
 /* Top Bar*/
 
+img#logo {
+    height: 45px;
+    /* display: block; */
+    margin-left: auto;
+}
+
+
 .topbar{
     overflow: hidden;
     background-color: #333;
@@ -76,6 +83,7 @@ input[type="submit"]:hover, button:hover {
 
 .searchBar{
     display: flex;
+    margin-right: auto;
     width: 50%;
     height: 80%;
 }
