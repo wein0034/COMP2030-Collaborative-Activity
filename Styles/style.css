@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     padding-top: 100px;
     position: relative;
@@ -51,7 +51,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 70%;
+    width: 60%;
     display: flex;
 }
 
@@ -178,21 +178,21 @@ p.error {
     text-align: center;
 }
 
-
 .item {
-    box-shadow: 0 2px 5px 0 rgb(96, 134, 98), 0 2px 10px 0 rgb(96, 134, 98);
     overflow: hidden;
-    background-color: #fff;
-    border-radius: 30px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
 }
 
-.listitem-background {
+/* .listitem-background {
     background-color: #ebf5ea;
-}
+} */
 
 .column {
     flex: 50%;
-    padding: 50px 20px; 
+    padding: 20px 20px; 
 }
 
 .rightcolumn{
@@ -222,7 +222,7 @@ img#addphoto-sml{
 }
 
 img#addphoto-lrg{
-    width:400px;
+    width:300px;
 }
 
 img#addphoto-sml:hover, img#addphoto-lrg:hover{
@@ -240,7 +240,7 @@ img#addphoto-sml:hover, img#addphoto-lrg:hover{
 }
 
 input[type="radio"] {
-    width: 20px;
+    width: 30px;
     margin-top: 15px;
     height:100%;
 }
@@ -250,7 +250,7 @@ input[type="radio"] {
 }
 
 .sellpricecondition{
-    position: relative;
+    height: 6em;
 }
 
 #sellprice {
@@ -260,7 +260,7 @@ input[type="radio"] {
 
 #sellcondition{
     width: 50%;
-    /* float:left; */
+    float:left;
 }
 
 
@@ -268,6 +268,11 @@ input[type="radio"] {
     display: none;
   }
 
+
+ #file-input{
+    background-position: center;
+    background-size: cover;
+  }
 
 /* View item page */
 
@@ -930,5 +935,6 @@ input[type=text] {
 {
     max-width: 75%;
     max-height: 75%;
-
 }
+
+
