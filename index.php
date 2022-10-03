@@ -40,11 +40,11 @@
         </div>
 
         <div id="searchBar">
-
+            <?php require "inc/search.inc.php"; ?>
         </div>
     </div>
 
-    <?php require_once "inc/bottom.inc.php"; ?>
+    <?php require "inc/bottom.inc.php"; ?>
 </body>
 
 

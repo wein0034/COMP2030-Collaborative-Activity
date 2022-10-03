@@ -12,7 +12,7 @@
 <body class="shoppingcart">
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
-    <form action="#" class="form">
+    <form action="#" class="form shoppingcartcontent">
         <!-- <h1 class="text-center">Registration Form</h1> -->
         <!-- Progress bar -->
         <div class="progressbar">

@@ -59,8 +59,8 @@
             </div>
 
             <div id="contentButtons">
-                <button type="submit" class="contentButton">Add to Cart</button>
-                <button type="submit" class="contentButton">View more info</button>
+                <button type="submit">Add to Cart</button>
+                <button type="submit">View more info</button>
             </div>
         </div>
     </div>

@@ -12,6 +12,29 @@ body {
     min-height: 100%;
 }
 
+/* Formatting */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"], button{
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #acc5a9;
+    outline: 0px;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgb(96, 134, 98);
+}
+
 /* Top Bar & Search Bar*/
 
 .topbar{
@@ -22,6 +45,8 @@ body {
     left: 0;
     z-index: 9999;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .topbar a {
@@ -38,13 +63,30 @@ body {
     color: white;
 }
 
-.searchBar{
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: none;
+.leftheader{
+    width: 33%;
+    display: flex;
 }
+
+.rightheader{
+    width: 33%;
+}
+
+
+.searchBar{
+    display: flex;
+    width: 33%;
+}
+
+.searchBar input[type="text"]{
+    border-radius: 30px 0px 0px 30px;
+}
+
+.searchBar input[type="submit"]{
+    width: auto;
+    border-radius: 0px 30px 30px 0px;
+}
+
 /* Login page */
 
 .item, .outerlogin {
@@ -118,26 +160,9 @@ img#kettle {
     width: 5%;
 }
 
-#login, #register, #publish, #buy {
-    border: 0px;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 25px;
-    width: 100%;
-    background-color: #acc5a9;
-    outline: 0px;
-    border-radius: 30px;
-}
-
-
 #loginsignup {
     font-size: 16px;
 }
-
-#login:hover, #register:hover, #publish:hover, #buy:hover {
-    background-color: rgb(96, 134, 98);
-}
-
 
 .innerlogin input:focus, .item input:focus{
     outline:0px;
@@ -200,7 +225,7 @@ p.error {
     text-align: center;
 }
 
-.column input, #description, #category {
+#description, #category {
     border: 1px solid #ddd;
     background-color: #fff;
     padding: 5px;
@@ -653,12 +678,8 @@ hr {
 }
 
 /* Shippind Details */
-input[type=text] {
-    width: 100%;
+.shoppingcartcontent input[type=text] {
     margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 /* Button */
@@ -862,7 +883,8 @@ input[type=text] {
 
 #contentText
 {    
-    height: 66%;
+    max-height: 100%;
+
 }
 
 #contentReviews
@@ -883,15 +905,6 @@ input[type=text] {
     flex-basis: 50%;
 }
 
-#contentButtons
-{
-    
-}
-
-.contentButton
-{
-    width: 100px;
-}
 
 /* Index/Landing Page */
 
