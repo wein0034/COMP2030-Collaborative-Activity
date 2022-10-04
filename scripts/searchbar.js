@@ -4,7 +4,12 @@ Init()
 
 function Init()
 {
-    var searchBars = document.getElementsByClassName("searchBar")
+    Cosmetic();
+}
+
+function Cosmetic()
+{
+    var searchBars = document.getElementsByClassName("searchBar");
 
     // Go through each search bar...
     for (const SB of searchBars) 
