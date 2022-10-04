@@ -60,7 +60,7 @@
             </p>
 
             <form>
-            <p><input type="submit" id="buy" value="Buy"></p>
+            <p><br><input type="submit" id="buy" value="Buy"></p>
             </form>
         </div>
   

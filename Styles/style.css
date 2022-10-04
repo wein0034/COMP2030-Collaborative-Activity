@@ -37,12 +37,6 @@ input[type="submit"]:hover, button:hover {
 
 /* Top Bar*/
 
-img#logo {
-    height: 45px;
-    /* display: block; */
-    margin-left: auto;
-}
-
 
 .topbar{
     overflow: hidden;
@@ -57,7 +51,7 @@ img#logo {
     align-items: center;
 }
 
-.topbar a {
+.leftheader a, .rightheader a {
     float: right;
     color: #f2f2f2;
     text-align: center;
@@ -78,12 +72,18 @@ img#logo {
 .rightheader{
 }
 
+img#logo {
+    height: 45px;
+}
+
+.logo a:hover{
+    background-color: #333;
+}
 
 /* Search Bar */
 
 .searchBar{
     display: flex;
-    margin-right: auto;
     width: 50%;
     height: 80%;
 }
@@ -236,7 +236,7 @@ p.error {
     text-align: center;
 }
 
-#description, #category {
+#description, #category, #location, #title, #price {
     border: 1px solid #ddd;
     background-color: #fff;
     padding: 5px;
@@ -267,6 +267,8 @@ img#addphoto-sml:hover, img#addphoto-lrg:hover{
 
 #publish, #buy {
     width: 250px;
+    display: flex;
+    margin: auto;
 }
 
 #description {

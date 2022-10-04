@@ -4,6 +4,7 @@
         <a href="./listitem.php">Sell</a>
     </div>
     
+    <?php require_once "inc/logo.inc.php"; ?> 
     <?php require "inc/search.inc.php"; ?>
 
     <div class="rightheader">
