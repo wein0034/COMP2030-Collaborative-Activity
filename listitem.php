@@ -9,19 +9,21 @@
         $category = $_POST['category'];
         $location = $_POST['location'];
         $description = $_POST['description'];
+        $image = $_POST['image'];
 
         $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
         $query->bindParam("title", $title, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() == 0) {
-            $query = $connection->prepare("INSERT INTO products(title, price, cond, category, location, description) 
-                VALUES (:title,:price,:cond,:category,:location,:description)");
+            $query = $connection->prepare("INSERT INTO products(title, price, cond, category, location, description, image) 
+                VALUES (:title,:price,:cond,:category,:location,:description,:image)");
             $query->bindParam("title", $title, PDO::PARAM_STR);
             $query->bindParam("price", $price, PDO::PARAM_STR);
             $query->bindParam("cond", $cond, PDO::PARAM_STR);
             $query->bindParam("category", $category, PDO::PARAM_STR);
             $query->bindParam("location", $location, PDO::PARAM_STR);
             $query->bindParam("description", $description, PDO::PARAM_STR);
+            $query->bindParam("image", $image, PDO::PARAM_STR);
 
             $result = $query->execute();
             if ($result) {
@@ -42,8 +44,7 @@
     <title>List an item for sale</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
-    <script src="scripts/script.js" defer></script>
-    <script src="scripts/imagepreview.js" defer></script>
+    <script src="imagepreview.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -97,42 +98,21 @@
 
         <div class="column">
             <div class="rightcolumn"> 
-
-                <div class="image-upload">
-                    <label for="file-input">
-                        <img src="images/uploadpic.png" id="addphoto-lrg">
-                    </label>
-                <input id="file-input" type="file" accept="image/jpeg, image/png, image/jpg"><br>
-
-                <!-- <label for="file-input2">
-                        <img src="images/uploadpic.png" id="addphoto-sml">
-                    </label>
-                <input id="file-input2" type="file" accept="image/jpeg, image/png, image/jpg">
-
-                <label for="file-input3">
-                        <img src="images/uploadpic.png" id="addphoto-sml">
-                    </label>
-                <input id="file-input3" type="file" accept="image/jpeg, image/png, image/jpg">
-
-                <label for="file-input4">
-                        <img src="images/uploadpic.png" id="addphoto-sml">
-                    </label>
-                <input id="file-input4" type="file" accept="image/jpeg, image/png, image/jpg"> -->
-                </div>
-
-                <p><input type="submit" id="publish" name="publish" value="Publish"></p>
-                    <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file-->
-                    <!-- can maybe add in the above javascript under 'examples' towards the end of the page to give preview of image -->
-                
+                <div class="form-input">
+                    <label for="image-input">Upload Image</label><p>
+                    <input type="file" name="image" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                    <div id="display-image">
                     </div>
-            </form>
+                </div>
+            </div>
+            <div class="buttonHolder">
+                <p><input type="submit" id="publish" name="publish" value="Publish"></p>
+            </div>
         </div>
+    </form>
     </div>
-
-
+</div>
 
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
-
-
 </html>

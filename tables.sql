@@ -20,6 +20,7 @@ CREATE TABLE `products` (
     `category` varchar(100) NOT NULL,
     `location` varchar(100) NOT NULL,
     `description` varchar(5000) NOT NULL,
+    `image` longblob NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
@@ -84,9 +85,8 @@ INSERT INTO products(title, price, category, cond, location, description) VALUES
 *We offer a Large Range and Excellent Selection of Caravans from which to choose - OFF-ROAD, SLIDE OUTS, POP-TOPS, CAMPER VANS.... Many of our vans feature SHOWER/TOILET facilities with a variety of formats including QUEEN, DOUBLE, BUNK and SINGLE BED layouts.
 *We also have a limited range of HIGH QUALITY USED WAGONS and 4WD TOWING VEHICLES in Stock for your Perusal and Convenience. ');
 INSERT INTO products(title, price, category, cond, location, description) VALUES ('Blackwolf Turbo 300 Twin Tent (3 rooms large porch) family tent', 850, 'Used', 'Furniture', 'Parkside SA', 'Parkside Pickup for a Blackwolf Turbo 300 Twin Tent (3 rooms large porch) 
-
 Great size for a family tent and sun protection out front with porch. Waterproof floor. Raised edging at doorway to provide protection against any rain. Front and rear porches.');
-INSERT INTO products(title, price, category, cond, location, description) VALUES ('Set of 2 Portable Folding Camping Armchair - Grey', 106, 'New', 'Furniture', 'Adelaide CBD SA', 'Set of 2 Portable Folding Camping Arm Chair - Grey
+INSERT INTO products(title, price, category, cond, location, description) VALUES ('Set of 2 Portable Folding Camping Armchair', 106, 'New', 'Furniture', 'Adelaide CBD SA', 'Set of 2 Portable Folding Camping Arm Chair - Grey
 
 
 The chairs are made from powder coated high tensile steel frame and is suitable for both indoors and outdoors. It is lightweight but can carry up to 120kg worth of weight. The 600D oxford fabric is built to be resistant.

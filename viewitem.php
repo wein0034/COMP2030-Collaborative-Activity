@@ -60,7 +60,9 @@
             </p>
 
             <form>
-            <p><br><input type="submit" id="buy" value="Buy"></p>
+                <div class="buttonHolder">
+                    <p><br><input type="submit" id="buy" value="Buy"></p>
+                </div>
             </form>
         </div>
   
