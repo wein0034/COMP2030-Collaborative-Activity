@@ -70,7 +70,7 @@
 
     <div class="outerlogin">
         <div class="small-col">
-            <img id="kettle" src="images/kettle.png" height=70%>
+            <img id="kettle" src="images/kettle.png" height=60%>
         </div>
 
         <div class="small-col">

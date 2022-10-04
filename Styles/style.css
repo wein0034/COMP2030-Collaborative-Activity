@@ -28,6 +28,9 @@ input[type="submit"], button{
     width: 100%;
     background-color: #acc5a9;
     outline: 0px;
+}
+
+#login, #register, #buy, #publish {
     border-radius: 30px;
 }
 
@@ -142,9 +145,7 @@ img#kettle {
     border-radius: 15px;
     display: none;
     overflow: hidden;
-    /* height: 310px;      this needs to be made auto somehow so that the login and sign up are the same height */
 }  
-
 
 .collapsible, .form-input label {
     border: 0px;
@@ -223,6 +224,10 @@ p.error {
     border: 1px solid #ccc;
     border-radius: 0.35rem;
     padding: 1.5rem;
+}
+
+.empty {
+    margin-top: 50px;
 }
 
 .column {
