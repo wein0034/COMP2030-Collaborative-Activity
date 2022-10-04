@@ -115,7 +115,7 @@
 
 
 
-            <p class="forgotpassword"><a href="">Forgot your password?</a></p>
+            <p class="forgotpassword"><a href="forgotpassword.html">Forgot your password?</a></p>
             <p class="tos">By continuing, you agree to our Terms of Service and Privacy Notice.</p><br><br><br>
         </div>
     </div>
