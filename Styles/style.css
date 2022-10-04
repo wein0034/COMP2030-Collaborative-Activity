@@ -82,6 +82,10 @@ img#logo {
 
 /* Search Bar */
 
+#searchQuery{
+    font-size: 16px;
+}
+
 .searchBar{
     display: flex;
     width: 50%;
@@ -304,6 +308,10 @@ input[type="radio"] {
 }
 
 /* View item page */
+
+hr.hr-view {
+    width: 100%;
+}
 
 .view-imgs {
     text-align: center;
@@ -637,6 +645,9 @@ hr {
     overflow: hidden;
     width: 80%;
 }
+
+
+
 
 /* Summary */
 #summary {

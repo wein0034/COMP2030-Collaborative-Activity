@@ -17,10 +17,6 @@
         <div class="column" id="view-leftcol">
             <div class="view-imgs">
                 <img id="viewimg-lrg" src="images/tent.jpg" alt="Item Preview"><br>
-                <img id="viewimg-sml"src="images/tent.jpg" alt="Item Preview">
-                <img id="viewimg-sml"src="images/tent.jpg" alt="Item Preview">
-                <img id="viewimg-sml"src="images/tent.jpg" alt="Item Preview">
-                <!-- to put in function to swap between large and small images -->
             </div>
             <div class="condition">
                 <h3 id="inline">Condition: </h3> New
@@ -37,7 +33,7 @@
             <div class="view-rightdiv">
                 <h1>$00.00</h1>
             </div>
-                <hr>
+                <hr class="hr-view">
             <div class="view-leftdiv">
                 <h3>Category</h3> 
             </div>
