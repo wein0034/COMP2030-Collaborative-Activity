@@ -40,7 +40,7 @@
                 $_SESSION['user_id'] = $result['id'];
                 echo '<p class="success">Congratulations, you are logged in!</p>';
             } else {
-                echo '<p class="error">Password is wrong, please select for your password to reset password.</p>';
+                echo '<p class="error">Password entered is incorrect. Please select Forgot your password? to reset password.</p>';
             }
         }
     }

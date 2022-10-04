@@ -104,7 +104,7 @@
                     </label>
                 <input id="file-input" type="file" accept="image/jpeg, image/png, image/jpg"><br>
 
-                <label for="file-input2">
+                <!-- <label for="file-input2">
                         <img src="images/uploadpic.png" id="addphoto-sml">
                     </label>
                 <input id="file-input2" type="file" accept="image/jpeg, image/png, image/jpg">
@@ -117,7 +117,7 @@
                 <label for="file-input4">
                         <img src="images/uploadpic.png" id="addphoto-sml">
                     </label>
-                <input id="file-input4" type="file" accept="image/jpeg, image/png, image/jpg">
+                <input id="file-input4" type="file" accept="image/jpeg, image/png, image/jpg"> -->
                 </div>
 
                 <p><input type="submit" id="publish" name="publish" value="Publish"></p>
