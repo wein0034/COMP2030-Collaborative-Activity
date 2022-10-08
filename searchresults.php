@@ -73,7 +73,7 @@
                     include "inc/searchitem.inc.php";
 
 
-                    echo '<script>SetField("srIcon","'.ucwords($row["title"]).'");</script>';
+                    echo '<script>SetField("itemName","'.ucwords($row["title"]).'");</script>';
                     // change the values to match the result
                     echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';
                     //echo '<script>SetField("itemName","'.$row["cond"].'");</script>';

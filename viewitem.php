@@ -74,7 +74,7 @@ while ($row = mysqli_fetch_array($img)) {
 
             <form>
                 <div class="buttonHolder">
-                    <p><br><input type="submit" id="buy" value="Buy"></p>
+                    <p><br><input type="submit" id="addToCart" value="Buy"></p>
                 </div>
             </form>
         </div>

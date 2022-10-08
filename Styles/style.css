@@ -23,7 +23,7 @@ input[type="submit"], button{
     outline: 0px;
 }
 
-#login, #register, #buy, #publish {
+#login, #register, #addToCart, #publish, #viewInfo {
     border-radius: 30px;
 }
 
@@ -252,7 +252,7 @@ p.error {
     height: 2.5em;
 }
 
-#publish, #buy {
+#publish, #addToCart, #viewInfo {
     width: 250px;
 }
 
