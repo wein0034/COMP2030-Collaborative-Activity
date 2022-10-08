@@ -68,7 +68,8 @@
                     (strtolower($row["category"]) == $searchQuery))
                 {
                     $resultCount += 1;    
-                    
+
+
                     // Add a copy of the item template to the page
                     include "inc/searchitem.inc.php";
                     // change the values to match the result

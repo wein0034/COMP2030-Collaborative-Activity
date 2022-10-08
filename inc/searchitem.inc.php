@@ -60,7 +60,7 @@
 
             <div class="contentButtons">
                 <button type="submit">Add to Cart</button>
-                <button type="submit">View more info</button>
+                <button type="submit" name="viewInfo">View more info</button>
             </div>
         </div>
     </div>

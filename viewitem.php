@@ -28,7 +28,8 @@
 
         <div class="column" id="view-rightcol">
             <div class="view-leftdiv">
-                <h1>Item Name</h1>
+            <?php echo $data['title']??''; ?>
+            <!-- <h1>Item Name</h1> -->
             </div>
             <div class="view-rightdiv">
                 <h1>$00.00</h1>
