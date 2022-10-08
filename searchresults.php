@@ -34,11 +34,8 @@
         // Check connection
         if ($conn->connect_error) 
         {
-            die("Connection failed: " . $conn->connect_error);
             echo '<script>CounterDisplay("Connection to database failed.");</script>';
-        }
-        else
-        { 
+            die("Connection failed: " . $conn->connect_error);
         }
 
         $sql = "SELECT * 
@@ -92,6 +89,10 @@
             {
                 echo '<script>CounterDisplay("Sorry, there were no results that matched your search.");</script>';
             }
+            else if ($searchQuery == "*")
+            {
+                echo '<script>CounterDisplay(("No search specified; showing all " + '.$resultCount.' + " items in database."));</script>';
+            }
             else
             {
                 if ($resultCount == 1)
@@ -106,7 +107,6 @@
         } 
         else 
         {
-            echo "0 results";
             echo '<script>CounterDisplay("Sorry, the database does not contain any items.");</script>';
         }
 
