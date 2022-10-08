@@ -1,27 +1,14 @@
-function SetField(field, content, instance = -1)
+function SetField(field, attribute, content, instance = -1, child = 0)
 {
     const elemList = document.getElementsByClassName(field);
     const elemArr = [...elemList];
-    
-    if (instance < 0)
-    {
-        instance = elemArr.length - 1;
-    }
-    
-    elemArr[instance].children[0].innerText = content;
-}
 
-function SetFieldImage(field, content, instance = -1)
-{
-    const elemList = document.getElementsByClassName(field);
-    const elemArr = [...elemList];
-    
     if (instance < 0)
     {
         instance = elemArr.length - 1;
     }
-    
-    elemArr[instance].children[0].src = content;
+
+    elemArr[instance].children[child][attribute] = content;
 }
 
 function CounterDisplay(text)

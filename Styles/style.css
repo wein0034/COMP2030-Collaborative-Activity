@@ -322,8 +322,10 @@ hr.hr-view {
     text-align: center;
 }
 
-.viewimg-lrg {
-    width: 600px;
+img#viewimg-lrg {
+    
+    height: 100%;
+    width: 100%;
 }
 
 .viewimg-sml {

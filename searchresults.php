@@ -24,13 +24,8 @@
         // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
         echo '<script src="scripts/searchresults.js"></script>';
         
-        $servername = "localhost";
-        $username = "root";
-        $password = "mysql";
-        $dbname = "senior";
-        
         // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = mysqli_connect("localhost", "root", "mysql", "senior");
         // Check connection
         if ($conn->connect_error) 
         {
@@ -71,18 +66,19 @@
 
                     if ($row['image'] != null)
                     {
-                        echo '<script>SetFieldImage("srIcon", "'.$row["image"].'");</script>';
-                        echo '<script>SetFieldImage("contentImage", "'.$row["image"].'");</script>';
+                        echo '<script>SetField("srIcon", "src", "'.$row["image"].'");</script>';
+                        echo '<script>SetField("contentImage", "src", "'.$row["image"].'");</script>';
                     }
 
-                    echo '<script>SetField("itemName","'.ucwords($row["title"]).'");</script>';
+                    echo '<script>SetField("itemName", "innerText", "'.ucwords($row["title"]).', 0");</script>';
                     // change the values to match the result
-                    echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';
-                    // echo '<script>SetField("itemName","'.$row["cond"].'");</script>';
-                    echo '<script>SetField("category","'.ucwords($row["category"]).'");</script>';
-                    echo '<script>SetField("sellerName","'.$row["location"].'");</script>'; // show location for now
-                    echo '<script>SetField("contentText",`'.trim($row["description"]).'`);</script>';
-                    
+                    echo '<script>SetField("srPrice", "innerText","$"+"'.number_format($row["price"], 2).'");</script>';
+                    // echo '<script>SetField("itemName", "innerText","'.$row["cond"].'");</script>';
+                    echo '<script>SetField("category", "innerText","'.ucwords($row["category"]).'");</script>';
+                    echo '<script>SetField("sellerName", "innerText","'.$row["location"].'");</script>'; // show location for now
+                    echo '<script>SetField("contentText", "innerText",`'.trim($row["description"]).'`);</script>';
+
+                    echo '<script>SetField("viewInfoForm", "value",`'.$row["id"].'`);</script>';
                 }
             }
 

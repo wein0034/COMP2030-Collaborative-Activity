@@ -1,17 +1,3 @@
-
-<?php
-
-$conn = mysqli_connect("localhost", "root", "mysql", "senior");
-
-
-$img = mysqli_query($conn, "SELECT image FROM products");
-while ($row = mysqli_fetch_array($img)) {     
-     echo "<img src='".$row['image']."' >";   
-
-}     
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,10 +21,12 @@ while ($row = mysqli_fetch_array($img)) {
                 <img id="viewimg-lrg" src="images/tent.jpg" alt="Item Preview"><br>
             </div>
             <div class="condition">
-                <h3 id="inline">Condition: </h3> New
+                <b id="inline">Condition: </b>
+                <p id="inline">???</p>
             </div>
             <div class="location">
-                <h3 id="inline">Location: </h3> Bedford Park, South Australia 5042
+                <b id="inline">Location: </b>
+                <p id="inline">???</p>
             </div>
         </div>
 
@@ -57,21 +45,18 @@ while ($row = mysqli_fetch_array($img)) {
             <div class="view-rightdiv">
                 <h3>Seller Name</h3>
             </div>
-            <p><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus eu dignissim efficitur. 
-                Maecenas vestibulum mauris sit amet risus mattis fermentum. Pellentesque vehicula sapien nec lacus pulvinar commodo. 
-                Ut eget tortor in risus elementum posuere sit amet id sapien. 
-                Nulla lobortis nibh non orci egestas gravida. Fusce sagittis a purus sit amet interdum. 
-                Quisque malesuada pharetra eros eget maximus. Donec eget mattis mauris. Ut luctus magna velit, eu viverra leo interdum sit amet. 
-                Proin a mi sem. Nunc hendrerit leo non neque fringilla, vitae imperdiet tellus facilisis. Proin egestas vel sapien vitae porta. 
-                Mauris venenatis, nibh a volutpat consequat, elit turpis iaculis leo, vitae accumsan ipsum justo in justo.
-                </p><p>
-                Suspendisse mattis fermentum ante. Sed vulputate sapien quam, vel sagittis purus pharetra gravida. Suspendisse potenti.
-                Ut laoreet mauris at urna elementum maximus non eu felis. Nullam porta augue nisi, in mollis mi lacinia mollis.
-                Nullam a eros arcu. Morbi egestas velit sit amet sapien faucibus pulvinar. Suspendisse ac aliquam orci.
-                Nam velit nisl, hendrerit imperdiet lectus et, elementum convallis tellus. Vestibulum ultrices in mi ut euismod. 
-            </p>
-
+            <br>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus eu dignissim efficitur. 
+                    Maecenas vestibulum mauris sit amet risus mattis fermentum. Pellentesque vehicula sapien nec lacus pulvinar commodo. 
+                    Ut eget tortor in risus elementum posuere sit amet id sapien. 
+                    Nulla lobortis nibh non orci egestas gravida. Fusce sagittis a purus sit amet interdum. 
+                    Quisque malesuada pharetra eros eget maximus. Donec eget mattis mauris. Ut luctus magna velit, eu viverra leo interdum sit amet. 
+                    Proin a mi sem. Nunc hendrerit leo non neque fringilla, vitae imperdiet tellus facilisis. Proin egestas vel sapien vitae porta. 
+                    Mauris venenatis, nibh a volutpat consequat, elit turpis iaculis leo, vitae accumsan ipsum justo in justo.
+                </p>
+            </div>
             <form>
                 <div class="buttonHolder">
                     <p><br><input type="submit" id="addToCart" value="Buy"></p>
@@ -86,6 +71,30 @@ while ($row = mysqli_fetch_array($img)) {
 
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
-
-
 </html>
+
+<?php
+
+    $conn = mysqli_connect("localhost", "root", "mysql", "senior");
+
+    $itemID = $_GET["viewInfo"];
+    $result = $conn->query("SELECT * 
+                            FROM products 
+                            WHERE id=$itemID");
+
+    if ($result->num_rows > 0) 
+    {
+        $row = $result->fetch_assoc();
+        
+        echo '<script src="scripts/searchresults.js"></script>';
+        
+        //searchresults method|  |    field    |  |attribute|     |               content                   |instance|child|
+        echo '<script>SetField( "view-leftdiv",  "innerText",    "'.ucwords($row["title"]).'",                  0           );</script>';
+        echo '<script>SetField( "view-leftdiv",  "innerText",    "'.ucwords($row["category"]).'",               1           );</script>';
+        echo '<script>SetField( "view-rightdiv", "innerText",    "$"+"'.number_format($row["price"], 2).'",     0           );</script>';
+        echo '<script>SetField( "location",      "innerText",    "'.$row["location"].'",                       -1,     1    );</script>';
+        echo '<script>SetField( "condition",     "innerText",    "'.$row["cond"].'",                           -1,     1    );</script>';
+        echo '<script>SetField( "description",   "innerText",    `'.trim($row["description"]).'`                            );</script>';
+        echo '<script>SetField( "view-imgs",     "src",          "'.$row["image"].'"                                        );</script>';
+    } 
+?>

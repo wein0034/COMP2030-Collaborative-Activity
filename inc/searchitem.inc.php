@@ -60,7 +60,10 @@
 
             <div class="contentButtons">
                 <button type="submit" id="addToCart">Add to Cart</button>
-                <button type="submit" id="viewInfo" name="viewInfo">View more info</button>
+
+                <form action="viewitem.php" method="GET" class="viewInfoForm">
+                    <button type="submit" id="viewInfo" name="viewInfo" value="">View more info</button>
+                </form>
             </div>
         </div>
     </div>
