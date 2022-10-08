@@ -72,8 +72,9 @@
                     // Add a copy of the item template to the page
                     include "inc/searchitem.inc.php";
 
+
+                    echo '<script>SetField("srIcon","'.ucwords($row["title"]).'");</script>';
                     // change the values to match the result
-                    echo '<script>SetField("itemName","'.ucwords($row["title"]).'");</script>';
                     echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';
                     //echo '<script>SetField("itemName","'.$row["cond"].'");</script>';
                     echo '<script>SetField("category","'.ucwords($row["category"]).'");</script>';
