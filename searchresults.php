@@ -34,8 +34,7 @@
             echo 'connectino failed';
         }
         else
-        {
-            
+        { 
         }
 
         $sql = "SELECT * 
@@ -72,6 +71,7 @@
 
                     // Add a copy of the item template to the page
                     include "inc/searchitem.inc.php";
+
                     // change the values to match the result
                     echo '<script>SetField("itemName","'.ucwords($row["title"]).'");</script>';
                     echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';

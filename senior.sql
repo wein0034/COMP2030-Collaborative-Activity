@@ -35,7 +35,7 @@ CREATE TABLE `products` (
     `category` varchar(100) NOT NULL,
     `location` varchar(100) NOT NULL,
     `description` varchar(5000) NOT NULL,
-    `image` LONGBLOB NOT NULL,
+    `image` text NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  AUTO_INCREMENT=1;
 
