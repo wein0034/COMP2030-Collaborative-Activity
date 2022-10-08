@@ -25,13 +25,24 @@
                         Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. 
                         Duis vulputate commodo lectus, ac blandit elit tincidunt id.
                     </p>
-                    <img src="images/caravan.jpg" class="" width=100%>
+                    <div class="accImgHolder">
+                        <img src="images/caravan.jpg" class="accImgs">
+                    </div>
                 </div>
+
                 
                 <div class="rightHalf">
                     <h2> Your Orders </h2>
-                    <h3 id='productName'>Tent<h3>
-                    <img src="images/tent.jpg" class="" width=100%>
+                    <h3 id="productName">Tent</h3>
+                    <p id='productPrice'>$150<p>
+                    <p id='productDescription'> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. 
+                        Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+                    </p>
+                    <div class="accImgHolder"> 
+                        <img src="images/tent.jpg" class="accImgs">
+                    </div>
                 </div>
             </div>
                 

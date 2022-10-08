@@ -1,15 +1,8 @@
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     padding-top: 100px;
-    position: relative;
-    margin: 0;
-    min-height: 100%;
+
 }
 
 /* Formatting */
@@ -390,6 +383,16 @@ hr.hr-view {
     width: 100%;
 }
 
+.accImgHolder {
+    text-align: center;
+}
+
+.accImgs {
+    object-fit: cover;
+    width: 800px;
+    height: 500px;
+}
+
 .row1{
     display: flex;
 }
@@ -740,6 +743,7 @@ hr {
     bottom: 0;
     left: 0;
     right: 0;
+    position: fixed;
 }
 
 #leftfooter {
