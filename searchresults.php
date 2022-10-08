@@ -78,7 +78,7 @@
                     echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';
                     // echo '<script>SetField("itemName","'.$row["cond"].'");</script>';
                     echo '<script>SetField("category","'.ucwords($row["category"]).'");</script>';
-                    // echo '<script>SetField("itemName","'.$row["location"].'");</script>';
+                    echo '<script>SetField("sellerName","'.$row["location"].'");</script>';
                     echo '<script>SetField("contentText",`'.trim($row["description"]).'`);</script>';
                     
                 }
