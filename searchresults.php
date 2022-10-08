@@ -16,9 +16,13 @@
 <body>
     <?php require_once "inc/top.inc.php"; ?> 
 
+    <p id="resultsCounter">test</p>
+
     <?php
         session_start();
         require_once "inc/dbconn.inc.php";
+        // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
+        echo '<script src="scripts/searchresults.js"></script>';
         
         $servername = "localhost";
         $username = "root";
@@ -31,7 +35,7 @@
         if ($conn->connect_error) 
         {
             die("Connection failed: " . $conn->connect_error);
-            echo 'connectino failed';
+            echo '<script>CounterDisplay("Connection to database failed.");</script>';
         }
         else
         { 
@@ -53,9 +57,6 @@
                 $searchQuery = "*";
             }
 
-            // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
-            echo '<script src="scripts/searchresults.js"></script>';
-
             // output data of each row
             while($row = $result->fetch_assoc()) 
             {
@@ -67,7 +68,6 @@
                     (strtolower($row["category"]) == $searchQuery))
                 {
                     $resultCount += 1;    
-
 
                     // Add a copy of the item template to the page
                     include "inc/searchitem.inc.php";
@@ -87,14 +87,27 @@
                 }
             }
 
+            // Display resultCount to user
             if ($resultCount < 1)
             {
-                echo '<p>'."Sorry, no matching results". "<br>".'</p>';
+                echo '<script>CounterDisplay("Sorry, there were no results that matched your search.");</script>';
+            }
+            else
+            {
+                if ($resultCount == 1)
+                {
+                    echo '<script>CounterDisplay(('.$resultCount.' + " result!"));</script>';
+                }
+                else
+                {
+                    echo '<script>CounterDisplay(('.$resultCount.' + " results!"));</script>';
+                }
             }
         } 
         else 
         {
             echo "0 results";
+            echo '<script>CounterDisplay("Sorry, the database does not contain any items.");</script>';
         }
 
         $conn->close();

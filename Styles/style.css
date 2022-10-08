@@ -771,6 +771,12 @@ hr {
 
 /* Search Results */
 
+#resultsCounter
+{
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
 .searchItem
 {
     margin: 0px 75px 25px 75px;
