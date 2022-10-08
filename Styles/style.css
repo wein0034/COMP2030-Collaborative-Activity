@@ -983,6 +983,12 @@ hr {
     max-height: 75%;
 }
 
+img#Vehicle, img#Furniture, img#Supplies, img#Services {
+    border-radius: 30px;
+    height:150px;
+    width:200px;
+}
+
 .indexBar
 {
     display: flex;

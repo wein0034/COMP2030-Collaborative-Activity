@@ -1,4 +1,16 @@
 
+<?php
+
+$conn = mysqli_connect("localhost", "root", "mysql", "senior");
+
+
+$img = mysqli_query($conn, "SELECT image FROM products");
+while ($row = mysqli_fetch_array($img)) {     
+     echo "<img src='".$row['image']."' >";   
+
+}     
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
