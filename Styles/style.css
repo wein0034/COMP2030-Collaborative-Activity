@@ -980,15 +980,22 @@ hr {
 #indexButtons
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .indexButton
 {
-    margin: 50px;
     border-radius: 25%;
-    border-width:5px;
+    border-width: 5px;
+    max-width: 20%;
+    aspect-ratio: 1;
+}
+
+.indexButton h2
+{
+    margin: auto;
 }
 
 .buttonImage
