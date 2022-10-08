@@ -12,6 +12,8 @@
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 
+
+
     <div class="empty">
     <div class="item">
         <div class="column" id="view-leftcol">
@@ -26,10 +28,10 @@
             </div>
         </div>
 
+
         <div class="column" id="view-rightcol">
             <div class="view-leftdiv">
-            <?php echo $data['title']??''; ?>
-            <!-- <h1>Item Name</h1> -->
+                <h1>Title</h1>
             </div>
             <div class="view-rightdiv">
                 <h1>$00.00</h1>

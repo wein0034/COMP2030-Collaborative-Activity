@@ -1,38 +1,54 @@
-<?php
-    session_start();
-    include('dbconn.inc.php');
+<div class="empty">
+    <div class="item">
+        <div class="column" id="view-leftcol">
+            <div class="view-imgs">
+                <img id="viewimg-lrg" src="images/tent.jpg" alt="Item Preview"><br>
+            </div>
+            <div class="condition">
+                <h3 id="inline">Condition: </h3> New
+            </div>
+            <div class="location">
+                <h3 id="inline">Location: </h3> Bedford Park, South Australia 5042
+            </div>
+        </div>
 
-    $db= $connection;
-    $tableName="products";
-    $columns= ['id', 'title', 'price', 'cond', 'category', 'location', 'description', 'image'];
-    $fetchData = fetch_data($db, $tableName, $columns);
 
-    function fetch_data($db, $tableName, $columns){
-     if(empty($db)){
-      $msg= "Database connection error";
-     }
-     elseif (empty($columns) || !is_array($columns)) {
-      $msg="columns Name must be defined in an indexed array";
-     }
-     elseif(empty($tableName)){
-       $msg= "Table Name is empty";
-    }
-    else{
-    $columnName = implode(", ", $columns);
-    $query = "SELECT ".$columnName." FROM $tableName"." ORDER BY id DESC";
-    $result = $db->query($query);
+        <div class="column" id="view-rightcol">
+            <div class="view-leftdiv">
+                <div class="srText itemName">
+                <h1>Title</h1>
+            </div>
+            <div class="view-rightdiv">
+                <h1>$00.00</h1>
+            </div>
+                <hr class="hr-view">
+            <div class="view-leftdiv">
+                <h3>Category</h3> 
+            </div>
+            <div class="view-rightdiv">
+                <h3>Seller Name</h3>
+            </div>
+            <p><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus eu dignissim efficitur. 
+                Maecenas vestibulum mauris sit amet risus mattis fermentum. Pellentesque vehicula sapien nec lacus pulvinar commodo. 
+                Ut eget tortor in risus elementum posuere sit amet id sapien. 
+                Nulla lobortis nibh non orci egestas gravida. Fusce sagittis a purus sit amet interdum. 
+                Quisque malesuada pharetra eros eget maximus. Donec eget mattis mauris. Ut luctus magna velit, eu viverra leo interdum sit amet. 
+                Proin a mi sem. Nunc hendrerit leo non neque fringilla, vitae imperdiet tellus facilisis. Proin egestas vel sapien vitae porta. 
+                Mauris venenatis, nibh a volutpat consequat, elit turpis iaculis leo, vitae accumsan ipsum justo in justo.
+                </p><p>
+                Suspendisse mattis fermentum ante. Sed vulputate sapien quam, vel sagittis purus pharetra gravida. Suspendisse potenti.
+                Ut laoreet mauris at urna elementum maximus non eu felis. Nullam porta augue nisi, in mollis mi lacinia mollis.
+                Nullam a eros arcu. Morbi egestas velit sit amet sapien faucibus pulvinar. Suspendisse ac aliquam orci.
+                Nam velit nisl, hendrerit imperdiet lectus et, elementum convallis tellus. Vestibulum ultrices in mi ut euismod. 
+            </p>
 
-    if($result== true){ 
-        if ($result->num_rows > 0) {
-        $row= mysqli_fetch_all($result, MYSQLI_ASSOC);
-        $msg= $row;
-     } else {
-        $msg= "No Data Found"; 
-     }
-    }else{
-      $msg= mysqli_error($db);
-    }
-    }
-    return $msg;
-    }
-    ?>
+            <form>
+                <div class="buttonHolder">
+                    <p><br><input type="submit" id="buy" value="Buy"></p>
+                </div>
+            </form>
+        </div>
+  
+    </div>
+</div>
