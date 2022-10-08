@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,36 +11,6 @@
 </head>
 
 <body>
-
-<?php
-
-   $servername = "localhost";
-   $username = "root";
-   $password = "mysql";
-   $dbname = "senior";
-   
-   // Create connection
-   $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-   $sql = "SELECT title FROM products";
-   $result = mysqli_query($conn, $sql);
-   if (mysqli_num_rows($result)>0) {
-    while($row = mysqli_fetch_assoc($result)) {
-
-    }
-   }
-
-   // Close connection
-    mysqli_close($conn);
-?>
-
-
-
-
-
-
-
-
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 

@@ -9,10 +9,5 @@
         exit("Error: " . $e->getMessage());
     }
 
-    $dbHost     = "localhost";  
-    $dbUsername = "root";  
-    $dbPassword = "mysql";  
-    $dbName     = "senior";  
-  
    
 ?>
