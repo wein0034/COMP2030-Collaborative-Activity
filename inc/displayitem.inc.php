@@ -2,7 +2,7 @@
     <div class="item">
         <div class="column" id="view-leftcol">
             <div class="view-imgs">
-                <img id="viewimg-lrg" src="images/tent.jpg" alt="Item Preview"><br>
+                <img class="viewimg-lrg" src="images/tent.jpg" alt="Item Preview"><br>
             </div>
             <div class="condition">
                 <h3 id="inline">Condition: </h3> New

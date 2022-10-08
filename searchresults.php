@@ -69,16 +69,18 @@
                     // Add a copy of the item template to the page
                     include "inc/searchitem.inc.php";
 
-                    // echo '<img src="'.$row["image"].'" >';  
-
-
+                    if ($row['image'] != null)
+                    {
+                        echo '<script>SetFieldImage("srIcon", "'.$row["image"].'");</script>';
+                        echo '<script>SetFieldImage("contentImage", "'.$row["image"].'");</script>';
+                    }
 
                     echo '<script>SetField("itemName","'.ucwords($row["title"]).'");</script>';
                     // change the values to match the result
                     echo '<script>SetField("srPrice","$"+"'.number_format($row["price"], 2).'");</script>';
                     // echo '<script>SetField("itemName","'.$row["cond"].'");</script>';
                     echo '<script>SetField("category","'.ucwords($row["category"]).'");</script>';
-                    echo '<script>SetField("sellerName","'.$row["location"].'");</script>';
+                    echo '<script>SetField("sellerName","'.$row["location"].'");</script>'; // show location for now
                     echo '<script>SetField("contentText",`'.trim($row["description"]).'`);</script>';
                     
                 }
