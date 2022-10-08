@@ -1,48 +1,48 @@
 <div class="searchItem">
     <div class="collapsible sr" > 
-        <div id="srInner">
-            <div id="srIcon">
+        <div class="srInner">
+            <div class="srIcon">
                 <img id="tent" src="images/tent.jpg" alt="Item Preview">
             </div>
 
-            <div id="srText">
-                <div id="srText itemName">
+            <div class="srText">
+                <div class="srText itemName">
                     <h1>Item Name</h1>
                 </div>
                 <hr>
-                <div id="srText info">
-                    <div id="srText category">
+                <div class="srText info">
+                    <div class="srText category">
                         <h3>Category</h3> 
                     </div>
                     
-                    <div id="srText sellerName">
+                    <div class="srText sellerName">
                         <h3>Seller Name</h3>
                     </div>
                 </div>
             </div>
             
-            <div id="srRating">
+            <div class="srRating">
                 <h1>★ ★ ★ ★ ★</h1>
             </div>
             
-            <div id="srPrice">
+            <div class="srPrice">
                 <h1>$0000.00</h1>
             </div>
             
-            <div id="srToggle">
+            <div class="srToggle">
             </div>
         </div>
     </div>
 
     <div class="collapsableContent">
         <div class="searchresult">
-            <div id="contentImage">
+            <div class="contentImage">
                 <img id="tent" src="images/tent.jpg" alt="Item Preview">
             </div>
 
-            <div id="contentDetails">
-                <div id="contentText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+            <div class="contentDetails">
+                <div class="contentText">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</span>
                 </div>
                 <div id="contentReviews">
                     <div id="itemReviews">
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div id="contentButtons">
+            <div class="contentButtons">
                 <button type="submit">Add to Cart</button>
                 <button type="submit">View more info</button>
             </div>

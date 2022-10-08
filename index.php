@@ -16,7 +16,7 @@
         <h1>I'm looking for...</h1>
         <form action="searchresults.php" method="GET" id="indexButtons">
             <button type="submit"  class="indexButton" name="searchQuery" value="Vehicles">
-                <img class="buttonImage" id="Vehicles" src="images/addphoto.png">
+                <img class="buttonImage" id="Vehicle" src="images/addphoto.png">
                 <h2>Vehicles</h2>
             </button>
 
