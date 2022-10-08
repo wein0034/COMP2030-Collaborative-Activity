@@ -10,7 +10,7 @@
         $query->bindParam("email", $email, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
-            echo '<p class="error">The email address is already registered. Select forgot your password to reset password.</p>';
+            echo '<div class="error">The email address is already registered. Select forgot your password to reset password.</div>';
         }
         if ($query->rowCount() == 0) {
             $query = $connection->prepare("INSERT INTO users(name,password,email) VALUES (:name,:password_hash,:email)");
@@ -19,9 +19,9 @@
             $query->bindParam("email", $email, PDO::PARAM_STR);
             $result = $query->execute();
             if ($result) {
-                echo '<p class="success">Your registration was successful. Welcome to Senior!</p>';
+                echo '<div class="success">Your registration was successful. Welcome to Senior!</div>';
             } else {
-                echo '<p class="error">Something went wrong, try again later.</p>';
+                echo '<div class="error">Something went wrong, try again later.</div>';
             }
         }
     }

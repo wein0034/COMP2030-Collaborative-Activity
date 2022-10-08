@@ -202,8 +202,8 @@ p.tos {
     text-align: center; 
 }
 
-p.success,
-p.error {
+.success,
+.error {
     text-align: center;
     font-size: 18px;
     font-weight: bold;

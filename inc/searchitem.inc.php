@@ -37,6 +37,7 @@
     <div class="collapsableContent">
         <div class="searchresult">
             <div class="contentImage">
+                <div class="test"></div>
                 <img id="tent" src="images/tent.jpg" alt="Item Preview">
             </div>
 
