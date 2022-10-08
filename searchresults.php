@@ -70,7 +70,7 @@
                         echo '<script>SetField("contentImage", "src", "'.$row["image"].'");</script>';
                     }
 
-                    echo '<script>SetField("itemName", "innerText", "'.ucwords($row["title"]).', 0");</script>';
+                    echo '<script>SetField("itemName", "innerText", "'.ucwords($row["title"]).'");</script>';
                     // change the values to match the result
                     echo '<script>SetField("srPrice", "innerText","$"+"'.number_format($row["price"], 2).'");</script>';
                     // echo '<script>SetField("itemName", "innerText","'.$row["cond"].'");</script>';
