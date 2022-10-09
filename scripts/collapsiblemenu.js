@@ -1,3 +1,5 @@
+// contributor: Julian Weinrich wein0034
+
 var allowMultipleExpanded = false;
 var startCollapsed = true;
 var collapsibles;
