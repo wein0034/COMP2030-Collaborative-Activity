@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SENIOR - New and Returning Users</title>
+    <title>SENIOR -- New and Returning Users</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
     

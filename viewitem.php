@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SENIOR - Shopping and Exchange for Nomads Interested in Outdoor Recreation</title>
+    <title>SENIOR -- View Item</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
     <link rel="stylesheet" href="styles/style.css">

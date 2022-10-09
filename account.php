@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Account page</title>
+    <title>SENIOR -- Account page</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
     <link rel="stylesheet" href="styles/style.css">
