@@ -12,8 +12,6 @@
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 
-
-
     <div class="empty">
     <div class="item">
         <div class="column" id="view-leftcol">
@@ -22,11 +20,11 @@
             </div>
             <div class="condition">
                 <b id="inline">Condition: </b>
-                <p id="inline">???</p>
+                <p id="inline">New</p>
             </div>
             <div class="location">
                 <b id="inline">Location: </b>
-                <p id="inline">???</p>
+                <p id="inline">Adelaide SA</p>
             </div>
         </div>
 
@@ -43,7 +41,7 @@
                 <h3>Category</h3> 
             </div>
             <div class="view-rightdiv">
-                <h3>Seller Name</h3>
+                <a href="favourite.html" class="acc-links"><h3>Favourite</h3></a>
             </div>
             <br>
             <div class="description">
@@ -95,6 +93,6 @@
         echo '<script>SetField( "location",      "innerText",    "'.$row["location"].'",                       -1,     1    );</script>';
         echo '<script>SetField( "condition",     "innerText",    "'.$row["cond"].'",                           -1,     1    );</script>';
         echo '<script>SetField( "description",   "innerText",    `'.trim($row["description"]).'`                            );</script>';
-        echo '<script>SetField( "view-imgs",     "src",          "'.$row["image"].'"                                        );</script>';
+        echo '<script>SetField( "view-imgs",     "src",          "images/'.$row["image"].'"                                        );</script>';
     } 
 ?>

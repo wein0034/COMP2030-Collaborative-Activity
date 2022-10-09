@@ -323,14 +323,9 @@ hr.hr-view {
 }
 
 img#viewimg-lrg {
-    
     height: 100%;
     width: 100%;
-}
-
-.viewimg-sml {
-    width: 170px;
-    padding: 10px;
+    border-radius: 30px;
 }
 
 .condition {
@@ -369,12 +364,12 @@ img#viewimg-lrg {
 
 a.acc-links {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(96, 134, 98);
 }
 
 a.acc-links:hover{
     text-decoration: underline;
-    color: rgb(96, 134, 98);
+
 }
 
 .account{
@@ -825,9 +820,10 @@ hr {
 
 .srIcon img
 {
+    object-fit: cover;
     border-radius: 25%;
-    max-height: 100px;
-    max-width:100px;
+    height: auto;
+    width: 100px;
 }
 
 .srText {

@@ -66,8 +66,8 @@
 
                     if ($row['image'] != null)
                     {
-                        echo '<script>SetField("srIcon", "src", "'.$row["image"].'");</script>';
-                        echo '<script>SetField("contentImage", "src", "'.$row["image"].'");</script>';
+                        echo '<script>SetField("srIcon", "src", "images/'.$row["image"].'");</script>';
+                        echo '<script>SetField("contentImage", "src", "images/'.$row["image"].'");</script>';
                     }
 
                     echo '<script>SetField("itemName", "innerText", "'.ucwords($row["title"]).'");</script>';
