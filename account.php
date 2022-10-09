@@ -17,7 +17,7 @@
         <p><h1>Account</h1><p>
             <div class="row1">
                 <div class="leftHalf">
-                    <h2> Your Ads </h2>
+                    <a href="yourads.html" class="acc-links"><h2> Your Ads </h2></a>
                     <h3 id='productName'>Caravan</h3>
                     <p id='productPrice'>$30,000<p>
                     <p id='productDescription'> 
@@ -32,7 +32,7 @@
 
                 
                 <div class="rightHalf">
-                    <h2> Your Orders </h2>
+                    <a href="yourorders.html" class="acc-links"><h2> Your Orders </h2></a>
                     <h3 id="productName">Tent</h3>
                     <p id='productPrice'>$150<p>
                     <p id='productDescription'> 

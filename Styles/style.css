@@ -480,6 +480,16 @@ img#viewimg-lrg {
     min-height: 100vh;
 }
 
+a.acc-links {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a.acc-links:hover{
+    text-decoration: underline;
+    color: rgb(96, 134, 98);
+}
+
 /* Global Stylings */
 label {
     margin-bottom: 0.5rem;
