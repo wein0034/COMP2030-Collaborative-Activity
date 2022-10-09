@@ -2,9 +2,13 @@
 
 <?php
     session_start();
-    include('inc/dbconn.inc.php');
+    include('dbconn.inc.php');
 
     if (isset($_POST['publish'])) {
+        // $folder = "images/"; 
+        // $file = basename( $_FILES['image']['name']); 
+        // $full_path = $folder.$file; 
+
         $title = $_POST['title'];
         $price = $_POST['price'];
         $cond = $_POST['cond'];
@@ -12,7 +16,7 @@
         $location = $_POST['location'];
         $description = $_POST['description'];
         $image = $_POST['image'];
-
+        // $image = $full_path;
 
         $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
         $query->bindParam("title", $title, PDO::PARAM_STR);
