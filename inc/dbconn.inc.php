@@ -1,5 +1,6 @@
-<?php
+<!-- contributor: Jessica Richardson rich0485 -->
 
+<?php
     define('USER', 'root');
     define('PASSWORD', 'mysql');
     define('HOST', 'localhost');

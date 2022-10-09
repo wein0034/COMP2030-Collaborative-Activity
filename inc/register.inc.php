@@ -1,3 +1,4 @@
+<!-- contributor: Jessica Richardson rich0485 -->
 <?php
     session_start();
     include('inc/dbconn.inc.php');

@@ -1,3 +1,4 @@
+<!-- contributor: Julian Weinrich wein0034 -->
 <script src="scripts/helperfunctions.js" defer></script>
 <script src="scripts/searchbar.js" defer></script>
 

@@ -1,3 +1,4 @@
+<!-- contributor: Julian Weinrich wein0034 -->
 <div class="searchItem">
     <div class="collapsible sr" > 
         <div class="srInner">

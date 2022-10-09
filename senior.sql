@@ -1,3 +1,5 @@
+<!-- contributor: Jessica Richardson rich0485, Julian Weinrich wein0034-->
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/

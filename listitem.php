@@ -1,3 +1,5 @@
+<!-- contributor: Jessica Richardson rich0485 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +64,7 @@
             <div class="rightcolumn"> 
                 <div class="form-input">
                     <label for="image-input">Upload Image</label><p>
-                    <input type="file" name="image" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                    <input type="file" name="image" id="image-input" accept="image/jpeg, image/png, image/jpg" required>
                     <div id="display-image">
                     </div>
                 </div>

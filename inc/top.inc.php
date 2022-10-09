@@ -1,3 +1,5 @@
+<!-- contributor: Tatiana Roa Jaramillo roaj0001 -->
+
 <nav class="topbar">
     <div class="leftheader">
         <a href="./index.php">Buy</a>

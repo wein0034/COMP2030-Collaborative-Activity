@@ -1,3 +1,5 @@
+<!-- contributor: Jessica Richardson rich0485 -->
+
 <nav class="bottombar">
     <div id="leftfooter">
         <a href="./about.php">About</a>
