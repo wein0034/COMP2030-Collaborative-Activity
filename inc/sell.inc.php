@@ -22,10 +22,12 @@
         $image = $_POST['image'];
         // $image = $full_path; 
 
-        // binding parameters and uploading into the database
+        // connecting to database
         $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
         $query->bindParam("title", $title, PDO::PARAM_STR);
         $query->execute();
+
+        // binding parameters and uploading into the database
         if ($query->rowCount() == 0) {
             $query = $connection->prepare("INSERT INTO products(title, price, cond, category, location, description, image) 
                 VALUES (:title,:price,:cond,:category,:location,:description,:image)");
@@ -40,7 +42,7 @@
             $result = $query->execute();
             if ($result) {
                 echo '<p class="success">Item listed!</p>'; 
-                // go to the item listing page
+                // i want to go to the item listing page here but i havent implemented it yet
             } else {
                 echo '<p class="error">Something went wrong, try again later.</p>';
             }
