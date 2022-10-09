@@ -23,7 +23,7 @@ input[type="submit"], button{
     outline: 0px;
 }
 
-#login, #register, #addToCart, #publish, #viewInfo {
+#login, #register, #addToCart, #publish, #viewInfo, #back {
     border-radius: 30px;
 }
 
@@ -1009,8 +1009,6 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services {
     height:250px;
 }
 
-
-
 .indexBar
 {
     display: flex;
@@ -1022,4 +1020,41 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services {
     padding-top: 50px;
     scale: 200%;
     font-weight: 100;
+}
+
+/* 404 page */
+
+.construction-container {
+    width: 1800px;  
+    height: 100%;
+    position: relative;
+    padding-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.construction-bg {
+    display: block;
+    height: 550px;
+
+    background-image: url("../images/404image-lrg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 30px;
+}
+
+.construction-content {
+    position: absolute;
+    width: 500px;
+    border-radius: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#back{
+    width: 250px;
 }
