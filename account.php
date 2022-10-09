@@ -48,12 +48,12 @@
                 
             <div class="row2">
                 <div class="leftHalfR2">
-                    <h2 id='row2Tittle'> Favourites </h2>
+                <h2 id='row2Tittle'> <a href="favourites.html" class="acc-links">Favourites </h2></a>
                     <img src="images/favourite.png" class="favouriteIcon">
                 </div>
                 
                 <div class="rightHalfR2">
-                    <h2 id='row2Tittle'> Settings </h2>
+                    <h2 id='row2Tittle'><a href="settings.html" class="acc-links">Settings </h2></a>
                     <img src="images/setting.png" class="settingIcon">
                 </div>
             </div>

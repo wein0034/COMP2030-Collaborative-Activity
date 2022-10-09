@@ -59,7 +59,7 @@
             </div>
             <form>
                 <div class="buttonHolder">
-                    <p><br><input type="submit" id="addToCart" value="Buy"></p>
+                    <p><br><input type="submit" id="addToCart" value="Add to cart"></p>
                 </div>
             </form>
         </div>
