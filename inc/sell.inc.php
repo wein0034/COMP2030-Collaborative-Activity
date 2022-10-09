@@ -5,10 +5,14 @@
     include('dbconn.inc.php');
 
     if (isset($_POST['publish'])) {
+
+        // attempting to upload the image here to the images/ directory
+
         // $folder = "images/"; 
         // $file = basename( $_FILES['image']['name']); 
         // $full_path = $folder.$file; 
 
+        // assigning variables to the information from the sell form
         $title = $_POST['title'];
         $price = $_POST['price'];
         $cond = $_POST['cond'];
@@ -16,8 +20,9 @@
         $location = $_POST['location'];
         $description = $_POST['description'];
         $image = $_POST['image'];
-        // $image = $full_path;
+        // $image = $full_path; 
 
+        // binding parameters and uploading into the database
         $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
         $query->bindParam("title", $title, PDO::PARAM_STR);
         $query->execute();

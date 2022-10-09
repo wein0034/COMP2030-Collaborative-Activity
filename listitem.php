@@ -20,17 +20,24 @@
         <h1>List item for sale</h1>
     </div>
 
+    <!-- sell form-->
     <div class="item">
         <div class="column">
+
+        <!-- start of form -->
         <form action="" method="POST">
+
+        <!-- title -->
             <label><b>Title</b></label><br>
             <input type="text" name="title" id="title" required><p></p>
 
             <div class="sellpricecondition">
+        <!-- price -->
                 <div id="sellprice">
                     <label><b>Price ($)</b></label><br>
                     <input type="text"  name="price" id="price" min=0.05 type="number" required>
                 </div>
+                <!-- condition -->
                 <div id="sellcondition">
                     <label><b>Condition</b></label><br>
                     <input type="radio" name="cond" id="new" value="New">
@@ -41,6 +48,7 @@
                 </div>
             </div>
 
+            <!-- category -->
            <label for="category"><b>Category</b><br>
             <select name="category" id="category" required>
                 <option value="" selected>Select Option</option>
@@ -51,9 +59,11 @@
             </select>
         <p>
 
+        <!-- location -->
             <label><b>Location</b></label><br>
             <input type="text" id="location" name="location" required><p></p>
 
+            <!-- description -->
             <label><b>Description</b></label><br>
             <textarea name="description" id="description" data-val-length-min="20" 
                 data-val-required = "Please enter a description." required></textarea>
@@ -62,6 +72,7 @@
 
         <div class="column">
             <div class="rightcolumn"> 
+                <!-- upload image -->
                 <div class="form-input">
                     <label for="image-input">Upload Image</label><p>
                     <input type="file" name="image" id="image-input" accept="image/jpeg, image/png, image/jpg" required>
@@ -69,6 +80,7 @@
                     </div>
                 </div>
             </div>
+            <!-- publish item -->
             <div class="buttonHolder">
                 <p><input type="submit" id="publish" name="publish" value="Publish"></p>
             </div>
