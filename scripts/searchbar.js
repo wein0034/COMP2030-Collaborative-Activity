@@ -1,3 +1,5 @@
+// contributor: Julian Weinrich wein0034
+
 var showOnIndexPage = false;
 
 Init()

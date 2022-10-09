@@ -1,3 +1,6 @@
+// contributor: Julian Weinrich wein0034
+
+// this. took. so. long.
 function SetField(field, attribute, content, instance = -1, child = 0)
 {
     const elemList = document.getElementsByClassName(field);

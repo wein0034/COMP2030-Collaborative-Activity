@@ -1,3 +1,5 @@
+// contributor: taken from prac2
+
 function getUrlParam(name)
 {
     const params = new URLSearchParams(window.location.search);
