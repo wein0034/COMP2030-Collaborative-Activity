@@ -826,7 +826,8 @@ hr {
 .srIcon img
 {
     border-radius: 25%;
-    max-height: 75px;
+    max-height: 100px;
+    max-width:100px;
 }
 
 .srText {
@@ -922,9 +923,10 @@ hr {
 }
 
 
-#contentImage img
+.contentImage img
 {    
     border-radius: 10px;
+    width: 500px;
 }
 
 .contentDetails
