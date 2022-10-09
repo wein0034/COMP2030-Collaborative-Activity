@@ -13,6 +13,7 @@
         $description = $_POST['description'];
         $image = $_POST['image'];
 
+
         $query = $connection->prepare("SELECT * FROM products WHERE title=:title");
         $query->bindParam("title", $title, PDO::PARAM_STR);
         $query->execute();
