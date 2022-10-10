@@ -27,7 +27,7 @@
         echo '<script src="scripts/searchresults.js"></script>';
         
         // Create connection
-        $conn = mysqli_connect("localhost", "root", "mysql", "senior");
+        $conn = mysqli_connect("localhost", "root", "mysql", "senior_jwt");
         // Check connection
         if ($conn->connect_error) 
         {

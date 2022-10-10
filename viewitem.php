@@ -57,7 +57,7 @@
                     Mauris venenatis, nibh a volutpat consequat, elit turpis iaculis leo, vitae accumsan ipsum justo in justo.
                 </p>
             </div>
-            <form>
+            <form action="POST">
                 <div class="buttonHolder">
                     <p><br><input type="submit" id="addToCart" value="Add to cart"></p>
                 </div>
@@ -75,7 +75,7 @@
 
 <?php
 
-    $conn = mysqli_connect("localhost", "root", "mysql", "senior");
+    $conn = mysqli_connect("localhost", "root", "mysql", "SENIOR_JWT");
 
     $itemID = $_GET["viewInfo"];
     $result = $conn->query("SELECT * 
