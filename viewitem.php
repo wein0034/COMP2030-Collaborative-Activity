@@ -86,7 +86,7 @@
     {
         $row = $result->fetch_assoc();
         
-        echo '<script src="scripts/searchresults.js"></script>';
+        echo '<script src="scripts/helperfunctions.js"></script>';
         
         //searchresults method|  |    field    |  |attribute|     |               content                   |instance|child|
         echo '<script>SetField( "view-leftdiv",  "innerText",    "'.ucwords($row["title"]).'",                  0           );</script>';

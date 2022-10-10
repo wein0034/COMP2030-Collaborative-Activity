@@ -24,7 +24,7 @@
             session_start();
             require_once "inc/dbconn.inc.php";
             // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
-            echo '<script src="scripts/searchresults.js"></script>';
+            echo '<script src="scripts/helperfunctions.js"></script>';
             
             // Create connection
             $conn = mysqli_connect("localhost", "root", "mysql", "senior");
