@@ -67,7 +67,11 @@ input[type="submit"]:hover, button:hover {
     display: flex;
 }
 
-.rightheader{
+.rightheader
+{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 img#logo {
