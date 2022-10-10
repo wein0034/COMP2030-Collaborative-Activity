@@ -326,6 +326,7 @@ hr.hr-view {
 
 img#viewimg-lrg {
     border-radius: 30px;
+    width: 500px;
 }
 
 .condition {
@@ -396,8 +397,11 @@ a.acc-links:hover{
 
 .accImgs {
     object-fit: cover;
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
+}
+.accImgs img{
+
 }
 
 .row1{
