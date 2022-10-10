@@ -67,7 +67,11 @@ input[type="submit"]:hover, button:hover {
     display: flex;
 }
 
-.rightheader{
+.rightheader
+{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 img#logo {
@@ -789,9 +793,18 @@ hr {
     text-align: center;
     margin-top: -30px;
 }
+
+#searchResults
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
 .searchItem
 {
-    margin: 0px 75px 25px 75px;
+    margin-bottom: 25px;
+    width: 90%;;
 }
 
 .collapsible.sr
@@ -977,11 +990,17 @@ hr {
 
 #landingPage
 {
-    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+#landingPageInner
+{
+    width: 85%;
 }
 
 #landingPage h1
 {
+    margin-top: 0px;
     font-size: 50px;
 }
 #landingPage h2
