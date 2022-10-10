@@ -1,4 +1,4 @@
-<!-- contributor: Tatiana Roa Jaramillo roaj0001 -->
+<!-- contributor: Tatiana Roa Jaramillo roaj0001, Julian Weinrich wein0034 -->
 
 <nav class="topbar">
     <div class="leftheader">

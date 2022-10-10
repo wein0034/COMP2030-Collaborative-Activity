@@ -990,11 +990,17 @@ hr {
 
 #landingPage
 {
-    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+#landingPageInner
+{
+    width: 85%;
 }
 
 #landingPage h1
 {
+    margin-top: 0px;
     font-size: 50px;
 }
 #landingPage h2
