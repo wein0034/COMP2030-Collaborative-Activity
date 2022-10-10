@@ -31,7 +31,7 @@
             <div class="sellpricecondition">
                 <div id="sellprice">
                     <label><b>Price ($)</b></label><br>
-                    <input type="text"  name="price" id="price" min=0.05 type="number" required>
+                    <input name="price" id="price" min="1" max="100000" type="number" required>
                 </div>
                 <div id="sellcondition">
                     <label><b>Condition</b></label><br>
