@@ -46,7 +46,7 @@
            <label for="category"><b>Category</b><br>
             <select name="category" id="category" required>
                 <option value="" selected>Select Option</option>
-                <option value="vehicle">Vehicle</option>
+                <option value="vehicles">Vehicle</option>
                 <option value="furniture">Furniture</option>
                 <option value="supplies">Supplies</option>
                 <option value="services">Services</option>
