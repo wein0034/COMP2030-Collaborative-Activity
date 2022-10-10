@@ -1004,11 +1004,16 @@ hr {
     border-width: 5px;
     max-width: 20%;
     aspect-ratio: 1;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .indexButton h2
 {
-    margin: auto;
+    margin: 0px;
 }
 
 .buttonImage
@@ -1017,9 +1022,9 @@ hr {
     max-height: 75%;
 }
 
-img#Vehicle, img#Furniture, img#Supplies, img#Services {
+img#Vehicle, img#Furniture, img#Supplies, img#Services 
+{
     border-radius: 30px;
-    height:250px;
 }
 
 .indexBar
