@@ -1066,7 +1066,7 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services
 {
     display: flex;
     justify-content: center;
-    padding-top: ;
+    padding-top: 50px;
 }   
 
 .indexBar .searchBar
