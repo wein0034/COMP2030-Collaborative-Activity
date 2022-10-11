@@ -110,6 +110,9 @@ a#logo
 }
 
 /* Login page */
+.login{
+    padding-top: 100px;
+}
 
 .item, .outerlogin {
     position: absolute;
