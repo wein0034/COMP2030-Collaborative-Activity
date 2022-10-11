@@ -371,6 +371,9 @@ img#viewimg-lrg {
 
 
 /* Account page */
+.accountbody{
+    padding-top: 100px;
+}
 
 a.acc-links {
     text-decoration: none;
