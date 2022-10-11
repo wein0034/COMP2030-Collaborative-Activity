@@ -1066,11 +1066,11 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services
 {
     display: flex;
     justify-content: center;
-}
+    padding-top: ;
+}   
 
 .indexBar .searchBar
 {
-    padding-top: 50px;
     scale: 200%;
     font-weight: 100;
 }
