@@ -987,6 +987,10 @@ hr {
 
 /* Index/Landing Page */
 
+.index{
+    padding-top: 100px;
+}
+
 #landingPage
 {
     display: flex;
