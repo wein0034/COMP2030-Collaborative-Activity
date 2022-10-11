@@ -57,7 +57,7 @@
                     Mauris venenatis, nibh a volutpat consequat, elit turpis iaculis leo, vitae accumsan ipsum justo in justo.
                 </p>
             </div>
-            <form>
+            <form action="POST">
                 <div class="buttonHolder">
                     <p><br><input type="submit" id="addToCart" value="Add to cart"></p>
                 </div>

@@ -3,8 +3,7 @@
 body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    padding-top: 100px;
-
+    /* padding-top: 100px; */
 }
 
 /* Formatting */
@@ -218,6 +217,9 @@ p.tos {
 
 
 /* List item page */
+.listitem-background{
+    padding-top: 100px
+}
 
 .forsale {
     flex: 50%;
@@ -987,6 +989,10 @@ hr {
 
 
 /* Index/Landing Page */
+
+.index{
+    padding-top: 100px;
+}
 
 #landingPage
 {
