@@ -26,7 +26,7 @@
     </div>
     <div class="outerlogin">
         <div class="small-col">
-            <img id="kettle" src="images/kettle.png" height=60%>
+            <img id="kettle" src="images/kettle.png">
         </div>
 
         <div class="small-col">
