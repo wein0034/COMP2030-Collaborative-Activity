@@ -217,6 +217,9 @@ p.tos {
 
 
 /* List item page */
+.listitem-background{
+    padding-top: 100px
+}
 
 .forsale {
     flex: 50%;
