@@ -19,33 +19,15 @@
     <?php require_once "inc/top.inc.php"; ?> 
 
     <p id="resultsCounter">test</p>
-
-    <?php
-        session_start();
-        require_once "inc/dbconn.inc.php";
-        // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
-        echo '<script src="scripts/searchresults.js"></script>';
-        
-        // Create connection
-        $conn = mysqli_connect("localhost", "root", "mysql", "senior_jwt");
-        // Check connection
-        if ($conn->connect_error) 
-        {
-            echo '<script>CounterDisplay("Connection to database failed.");</script>';
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        $sql = "SELECT * 
-                FROM products";
-                
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) 
-        {
-            $resultCount = 0;
+    <div id="searchResults">
+        <?php
+            session_start();
+            require_once "inc/dbconn.inc.php";
+            // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
+            echo '<script src="scripts/searchresults.js"></script>';
             
             // Create connection
-            $conn = mysqli_connect("localhost", "root", "mysql", "senior_jwt");
+            $conn = mysqli_connect("localhost", "root", "mysql", "senior");
             // Check connection
             if ($conn->connect_error) 
             {
