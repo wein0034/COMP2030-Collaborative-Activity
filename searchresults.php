@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="searchResultsBody">
     <?php require_once "inc/top.inc.php"; ?> 
 
     <p id="resultsCounter">test</p>
