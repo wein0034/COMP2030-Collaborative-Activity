@@ -75,7 +75,7 @@
 
 <?php
 
-    $conn = mysqli_connect("localhost", "root", "mysql", "SENIOR_JWT");
+    $conn = mysqli_connect("localhost", "root", "mysql", "senior");
 
     $itemID = $_GET["viewInfo"];
     $result = $conn->query("SELECT * 
