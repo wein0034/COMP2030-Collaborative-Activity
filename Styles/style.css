@@ -795,6 +795,10 @@ hr {
 
 /* Search Results */
 
+.searchResultsBody{
+    padding-top: 100px;
+}
+
 #resultsCounter
 {
     width: 100%;
