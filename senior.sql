@@ -1,5 +1,14 @@
 -- contributor: Jessica Richardson rich0485, Julian Weinrich wein0034
 
+-- --------------------------------------------------------
+
+-- TO USE THIS FILE:
+-- 1. CREATE DATABASE NAMED SENIOR
+-- 2. DRAG AND DROP THIS FILE ONTO 'SQL' IN PHPMYADMIN
+-- 3. NOTE THAT WE ARE USING THE DEFAULT USERNAME: ROOT, PASSWORD: MYSQL FOR OUR PHP CONNECTION
+
+-- --------------------------------------------------------
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
@@ -14,9 +23,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-CREATE DATABASE senior; 
-USE senior;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;

@@ -12,7 +12,7 @@
 </head>
 
 <body class="listitem-background">
-    <?php require_once "inc/top.inc.php"; ?> 
+    <?php require_once "inc/top.inc.php"; ?>
     <?php require_once "inc/sell.inc.php"; ?>
     <?php require_once "inc/search.inc.php"; ?>
 
@@ -22,12 +22,10 @@
 
     <div class="item">
         <div class="column">
-
-        <form action="" method="POST" enctype='multipart/form-data'>
-
+            <form action="" method="POST" enctype='multipart/form-data'>
             <label><b>Title</b></label><br>
-            <input type="text" name="title" id="title" required><p></p>
-
+            <input type="text" name="title" id="title" required>
+            <p></p>
             <div class="sellpricecondition">
                 <div id="sellprice">
                     <label><b>Price ($)</b></label><br>
@@ -42,8 +40,7 @@
                     <p></p>
                 </div>
             </div>
-
-           <label for="category"><b>Category</b><br>
+            <label for="category"><b>Category</b><br>
             <select name="category" id="category" required>
                 <option value="" selected>Select Option</option>
                 <option value="vehicles">Vehicle</option>
@@ -51,34 +48,30 @@
                 <option value="supplies">Supplies</option>
                 <option value="services">Services</option>
             </select>
-        <p>
-
+            <p></p>
             <label><b>Location</b></label><br>
-            <input type="text" id="location" name="location" required><p></p>
+            <input type="text" id="location" name="location" required>
+            <p></p>
 
             <label><b>Description</b></label><br>
-            <textarea name="description" id="description" data-val-length-min="20" 
-                data-val-required = "Please enter a description." required></textarea>
-
+            <textarea name="description" id="description" data-val-length-min="20"
+                data-val-required="Please enter a description." required></textarea>
         </div>
 
         <div class="column">
-            <div class="rightcolumn"> 
+            <div class="rightcolumn">
                 <div class="form-input">
-                    <label for="image-input">Upload Image</label><p>
+                    <label for="image-input">Upload Image</label><p></p>
                     <input type="file" name="image" id="image-input" accept="image/jpeg, image/png, image/jpg" required>
-                    <div id="display-image">
-                    </div>
+                        <div id="display-image"></div>
                 </div>
             </div>
             <div class="buttonHolder">
                 <p><input type="submit" id="publish" name="publish" value="Publish"></p>
             </div>
         </div>
-    </form>
+        </form>
     </div>
-</div>
-
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 </html>

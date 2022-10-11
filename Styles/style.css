@@ -3,10 +3,10 @@
 body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    /* padding-top: 100px; */
 }
 
 /* Formatting */
+
 input[type=text] {
     width: 100%;
     padding: 12px;
@@ -33,7 +33,6 @@ input[type="submit"]:hover, button:hover {
 }
 
 /* Top Bar*/
-
 
 .topbar{
     overflow: hidden;
@@ -82,7 +81,6 @@ a#logo
     padding: 0px;
 }
 
-
 .logo a:hover{
     background-color: #333;
 }
@@ -110,6 +108,7 @@ a#logo
 }
 
 /* Login page */
+
 .login{
     padding-top: 100px;
 }
@@ -143,7 +142,6 @@ img#kettle {
     margin: 20px;
     padding: 20px;
 }
-
 
 .innerlogin {
     border: 1px solid #cfe4cd;
@@ -217,9 +215,8 @@ p.tos {
     font-weight: bold;
 }
 
-
-
 /* List item page */
+
 .listitem-background{
     padding-top: 100px
 }
@@ -238,7 +235,7 @@ p.tos {
 }
 
 .empty {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .column {
@@ -369,9 +366,8 @@ img#viewimg-lrg {
     text-align: right;
 }
 
-
-
 /* Account page */
+
 .accountbody{
     padding-top: 100px;
 }
@@ -497,9 +493,8 @@ a.acc-links:hover{
     min-height: 100vh;
 }
 
-
-
 /* Global Stylings */
+
 label {
     margin-bottom: 0.5rem;
 }
@@ -524,6 +519,7 @@ input {
 }
 
 /* Progressbar */
+
 .progressbar {
     position: relative;
     display: flex;
@@ -580,6 +576,7 @@ input {
 }
 
 /* Form */
+
 .form {
     width: clamp(800px, 30%, 430px);
     margin: 0 auto;
@@ -615,6 +612,7 @@ input {
 }
 
 /* Shopping Cart */
+
 .rowcart {
     /* display: -ms-flexbox; */
     display: flex;
@@ -661,6 +659,7 @@ input {
 }
 
 /* Column 1 */
+
 .scartimage {
     width: 100%;
     padding-left: 20px;
@@ -670,6 +669,7 @@ input {
 }
 
 /* Column 3 */
+
 hr {
     border: 1px solid lightgrey;
     display: block;
@@ -682,10 +682,8 @@ hr {
     width: 80%;
 }
 
-
-
-
 /* Summary */
+
 #summary {
     text-align: center;
 }
@@ -728,12 +726,14 @@ hr {
     margin: 0 -16px;
 }
 
-/* Shippind Details */
+/* Shipping Details */
+
 .shoppingcartcontent input[type=text] {
     margin-bottom: 20px;
 }
 
 /* Button */
+
 .btns-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -756,7 +756,7 @@ hr {
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(130, 210, 134);
 }
 
-/* bottombar */
+/* bottombar/footer */
 
 .bottombar {
     overflow: hidden;
@@ -944,7 +944,6 @@ hr {
     width: 40%;
 }
 
-
 .contentImage img
 {    
     border-radius: 10px;
@@ -993,7 +992,6 @@ hr {
 {
     flex-basis: 50%;
 }
-
 
 /* Index/Landing Page */
 
@@ -1086,7 +1084,6 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services
 .construction-bg {
     display: block;
     height: 550px;
-
     background-image: url("../images/404image-lrg.jpg");
     background-repeat: no-repeat;
     background-position: center; 

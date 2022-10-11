@@ -8,7 +8,5 @@
         <a href="./sitemap.php">Site Map</a>
     </div>
 
-    <div id="rightfooter">
-        &copy; 2022, SENIOR, Inc.
-    </div>
+    <div id="rightfooter"> &copy; 2022, SENIOR, Inc. </div>
 </nav>
