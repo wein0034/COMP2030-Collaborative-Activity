@@ -18,24 +18,24 @@
         <div id="landingPageInner">
             <h1>I'm looking for...</h1>
             <form action="searchresults.php" method="GET" id="indexButtons">
-                <button type="submit" class="indexButton VehicleButton" name="searchQuery" value="Vehicles">
-                    <img class="buttonImage" id="Vehicle" src="images/caravan2.jpg">
+                <button type="submit" class="indexButton" name="searchQuery" value="Vehicles">
+                    <img class="buttonImage VehiclesButton" id="Vehicle" src="images/caravan2.jpg">
                     <h2>Vehicles</h2>
                 </button>
 
-                <button type="submit" class="indexButton FurnitureButton" name="searchQuery" value="Furniture">
-                    <img class="buttonImage" id="Furniture" src="images/campingchairs.jpg">
+                <button type="submit" class="indexButton " name="searchQuery" value="Furniture">
+                    <img class="buttonImage FurnitureButton" id="Furniture" src="images/campingchairs.jpg">
                     <h2>Furniture</h2>
                 </button>
 
-                <button type="submit" class="indexButton SuppliesButton" name="searchQuery" value="Supplies">
-                    <img class="buttonImage" id="Supplies" src="images/campingtable.jpg">
+                <button type="submit" class="indexButton " name="searchQuery" value="Supplies">
+                    <img class="buttonImage SuppliesButton" id="Supplies" src="images/campingtable.jpg">
                     <h2>Supplies</h21>
                 </button>
 
-                <button type="submit" class="indexButton ServicesButton" name="searchQuery" value="Services">
+                <button type="submit" class="indexButton " name="searchQuery" value="Services">
                 <div></div>
-                    <img class="buttonImage" id="Services" src="images/hiking.jpg">
+                    <img class="buttonImage ServicesButton" id="Services" src="images/hiking.jpg">
                     <h2>Services</h2>
                     
                 </button>
@@ -73,7 +73,7 @@
 
             if ($result->num_rows > 0)
             {
-                $rand = rand(0, $result->num_rows - 1) + 1;
+                $rand = rand(1, $result->num_rows);
 
                 $i = 1;
                 while($row = $result->fetch_assoc()) 
@@ -84,7 +84,7 @@
                         {
                             if ($row['image'] != null)
                             {
-                                echo '<script>SetField(("'.$category.'Button"), "src", "images/'.$row["image"].'", 0, 0);</script>';
+                                echo '<script>SetField(("'.$category.'Button"), "src", "images/'.$row["image"].'", 0, -1);</script>';
                             }
                             break;
                         }
