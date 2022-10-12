@@ -36,7 +36,7 @@
                     </p>
 
                     <label><b>Password</b></label>
-                    <input type="password" name="password" id="password" minlength="8" required>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase letter, one lowercase letter and be at least 8 characters" required>
                     </p>
 
                     <input type="submit" name="register" id="register" value="Create Account">
