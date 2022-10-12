@@ -7,7 +7,6 @@
     <title>SENIOR -- List an item for sale</title>
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
-    <script src="scripts/imagepreview.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
