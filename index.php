@@ -34,8 +34,10 @@
                 </button>
 
                 <button type="submit" class="indexButton ServicesButton" name="searchQuery" value="Services">
+                <div></div>
                     <img class="buttonImage" id="Services" src="images/hiking.jpg">
                     <h2>Services</h2>
+                    
                 </button>
             </form>
 
@@ -72,12 +74,10 @@
             if ($result->num_rows > 0)
             {
                 $rand = rand(0, $result->num_rows - 1) + 1;
-                echo $category.":".$rand;
 
                 $i = 1;
                 while($row = $result->fetch_assoc()) 
                 {
-                    echo $row['id'];
                     if ($row['category'] == $category)
                     {
                         if ($i == $rand) 
