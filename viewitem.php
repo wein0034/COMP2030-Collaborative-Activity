@@ -14,6 +14,7 @@
     <?php require_once "inc/top.inc.php"; ?>
     <?php require_once "inc/search.inc.php"; ?>
 
+    <div class="empty">
         <div class="item">
             <div class="column" id="view-leftcol">
                 <div class="view-imgs">
@@ -67,6 +68,7 @@
                 </form>
             </div>
         </div>
+    </div>
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 </html>
