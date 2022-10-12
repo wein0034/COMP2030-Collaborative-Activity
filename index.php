@@ -11,34 +11,34 @@
 </head>
 
 <body class="index">
-    <?php require_once "inc/top.inc.php"; ?> 
+    <?php require_once "inc/top.inc.php"; ?>
     <?php require_once "inc/search.inc.php"; ?>
-    
+
     <div id="landingPage">
         <div id="landingPageInner">
             <h1>I'm looking for...</h1>
             <form action="searchresults.php" method="GET" id="indexButtons">
-                <button type="submit"  class="indexButton" name="searchQuery" value="Vehicles">
+                <button type="submit" class="indexButton" name="searchQuery" value="Vehicles">
                     <img class="buttonImage" id="Vehicle" src="images/caravan2.jpg">
                     <h2>Vehicles</h2>
                 </button>
 
-                <button type="submit"  class="indexButton" name="searchQuery" value="Furniture">
+                <button type="submit" class="indexButton" name="searchQuery" value="Furniture">
                     <img class="buttonImage" id="Furniture" src="images/campingchairs.jpg">
                     <h2>Furniture</h2>
                 </button>
 
-                <button type="submit"  class="indexButton" name="searchQuery" value="Supplies">
+                <button type="submit" class="indexButton" name="searchQuery" value="Supplies">
                     <img class="buttonImage" id="Supplies" src="images/campingtable.jpg">
                     <h2>Supplies</h21>
                 </button>
 
-                <button type="submit"  class="indexButton" name="searchQuery" value="Services">
+                <button type="submit" class="indexButton" name="searchQuery" value="Services">
                     <img class="buttonImage" id="Services" src="images/hiking.jpg">
                     <h2>Services</h2>
                 </button>
             </form>
-            
+
 
             <div class="indexBar">
                 <?php require "inc/search.inc.php"; ?>
