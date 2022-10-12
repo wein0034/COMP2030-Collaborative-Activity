@@ -1,6 +1,0 @@
-Init()
-
-function Init()
-{
-    
-}
