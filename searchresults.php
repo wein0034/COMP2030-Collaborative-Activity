@@ -10,7 +10,6 @@
     
     <script src="scripts/helperfunctions.js" defer></script>
     <script src="scripts/collapsiblemenu.js" defer></script>
-    <script src="scripts/searchresults.js" defer></script>
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -23,7 +22,6 @@
         <?php
             session_start();
             require_once "inc/dbconn.inc.php";
-            // this includes the searchresults.js script. why it has to be here as well as at the top i have no idea but i don't like it
             echo '<script src="scripts/helperfunctions.js"></script>';
             
             // Create connection
