@@ -30,8 +30,8 @@
                 <h1>$0000.00</h1>
             </div>
             
-            <div class="srToggle">
-            </div>
+            <!-- <div class="srToggle">
+            </div> -->
         </div>
     </div>
 

@@ -32,6 +32,14 @@ input[type="submit"]:hover, button:hover {
     background-color: rgb(96, 134, 98);
 }
 
+h1
+{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
 /* Top Bar*/
 
 .topbar{
@@ -838,7 +846,6 @@ hr {
 
 .srIcon {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 10%;
     height: 100%;
@@ -865,6 +872,7 @@ hr {
     padding: 3px;
     margin: -3px;
     margin-top: -9px;
+    width: 100%;
 }
 
 .srText h3
@@ -962,7 +970,6 @@ hr {
     height: 55%;
     display: block;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
 }
 
