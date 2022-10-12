@@ -76,7 +76,7 @@
 <?php
     $conn = mysqli_connect("localhost", "root", "mysql", "senior");
 
-    $itemID = $_GET["viewInfo"];
+    $itemID = htmlspecialchars($_GET["viewInfo"]);
     $result = $conn->query("SELECT * 
                             FROM products 
                             WHERE id=$itemID");
