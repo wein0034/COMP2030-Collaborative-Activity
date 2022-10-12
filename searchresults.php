@@ -21,7 +21,6 @@
     <div id="searchResults">
         <?php
             session_start();
-            require_once "inc/dbconn.inc.php";
             echo '<script src="scripts/helperfunctions.js"></script>';
             
             // Create connection

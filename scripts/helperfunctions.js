@@ -27,7 +27,14 @@ function SetField(className, attribute, content, instance = -1, child = 0)
         instance = elemArr.length - 1;
     }
 
-    elemArr[instance].children[child][attribute] = content;
+    if (child == -1)
+    {
+        elemArr[instance][attribute] = content;
+    }
+    else
+    {
+        elemArr[instance].children[child][attribute] = content;
+    }
 }
 
 function CounterDisplay(text)
