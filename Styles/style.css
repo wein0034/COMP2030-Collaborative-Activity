@@ -234,10 +234,6 @@ p.tos {
     padding: 1.5rem;
 }
 
-.empty {
-    margin-top: 100px;
-}
-
 .column {
     flex: 50%;
     padding: 20px 20px; 
@@ -321,6 +317,11 @@ input[type="radio"] {
 }
 
 /* View item page */
+
+.item {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 hr.hr-view {
     width: 100%;
