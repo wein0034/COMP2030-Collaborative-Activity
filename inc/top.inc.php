@@ -16,6 +16,8 @@
         <a href="./login.php?returning=true">Log in</a>
         <a href="./shoppingcart.php">
             <img src="images/shopping-cart.png" id="shopping-cart">
+            <span id="cart_count" class="text-warning bg-light">0</span>
+            
         </a>
     </div>
 </nav>
