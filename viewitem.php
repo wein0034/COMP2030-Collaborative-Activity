@@ -13,7 +13,6 @@
 <body>
     <?php require_once "inc/top.inc.php"; ?>
     <!-- add elements to cart -->
-    <?php require_once "inc/addelements.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
 
     <div class="empty">
@@ -65,9 +64,11 @@
                 <form method="POST">
                     <!-- <form action="shoppingcart.php" method="GET"> -->
                     <div class="buttonHolder">
-                        <p><br><input type="submit" id="addToCart" name="add" value="Add to cart">
-                        <!-- hidden input -->
-                        <input type="hidden" name="id" value='$itemID'>
+                        <p>
+                            <br>
+                            <input type="submit" id="addToCart" name="add" value="Add to cart">
+                            <!-- hidden input -->
+                            <input type="hidden" name="id" value='$itemID'>
                         </p>
                     </div>
                 </form>
@@ -82,6 +83,10 @@
     $conn = mysqli_connect("localhost", "root", "mysql", "senior");
 
     $itemID = htmlspecialchars($_GET["viewInfo"]);
+
+    // This is included here instead of in the header because it needs to be included AFTER $itemID is initalized. ~J
+    require "inc/addelements.inc.php";
+
     $result = $conn->query("SELECT * 
                             FROM products 
                             WHERE id=$itemID");
