@@ -93,6 +93,10 @@ a#logo
     background-color: #333;
 }
 
+#shopping-cart {
+    height: 17px;
+}
+
 /* Search Bar */
 
 #searchQuery{

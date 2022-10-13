@@ -14,5 +14,8 @@
 
         <a href="./login.php?returning=false">Sign up</a>
         <a href="./login.php?returning=true">Log in</a>
+        <a href="./shoppingcart.php">
+            <img src="images/shopping-cart.png" id="shopping-cart">
+        </a>
     </div>
 </nav>
