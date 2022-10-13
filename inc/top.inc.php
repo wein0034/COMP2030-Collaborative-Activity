@@ -16,6 +16,15 @@
         <a href="./login.php?returning=true">Log in</a>
         <a href="./shoppingcart.php">
             <img src="images/shopping-cart.png" id="shopping-cart">
+            <?php
+
+            // if(isset($_SESSION['cart'])){
+            //     $count = count($_SESSION['cart']);
+            //     echo "<span id="cart_count">$count</span>";
+            // }else{
+            //     echo "<span id="cart_count">0</span>";
+            // }
+            // ?>
             <span id="cart_count">0</span> 
             
         </a>
