@@ -1,3 +1,4 @@
+<!-- contributor: Tatiana Roa Jaramillo roaj0001 -->
 <!-- add products to cart -->
 <?php
     // connect to database
