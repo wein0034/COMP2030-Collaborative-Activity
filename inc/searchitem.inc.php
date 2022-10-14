@@ -60,7 +60,7 @@
             </div>
 
             <div class="contentButtons">
-                <button type="submit" id="addToCart">Add to Cart</button>
+                <?php require 'inc/addtocart.inc.php'; ?>
 
                 <form action="viewitem.php" method="GET" class="viewInfoForm">
                     <button type="submit" id="viewInfo" name="viewInfo" value="">View more info</button>

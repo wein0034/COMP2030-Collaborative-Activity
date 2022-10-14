@@ -78,6 +78,7 @@
                         echo '<script>SetField("contentText", "innerText",`'.trim($row["description"]).'`);</script>';
 
                         echo '<script>SetField("viewInfoForm", "value",`'.$row["id"].'`);</script>';
+                        echo '<script>SetField( "addtocart", "value", "'.$row["id"].'", -1, -1);</script>';
                     }
                 }
 

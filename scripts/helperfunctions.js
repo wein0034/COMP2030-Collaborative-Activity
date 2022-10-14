@@ -1,5 +1,4 @@
 // contributor: taken from prac2
-
 function getUrlParam(name)
 {
     /// <summary>Retrieves the value of a URL parameter.</summary>
@@ -10,7 +9,7 @@ function getUrlParam(name)
     return params.has(name) ? params.get(name) : "";
 }
 
-
+// contributor: Julian Weinrich wein0034
 function SetField(className, attribute, content, instance = -1, child = 0)
 {
     /// <summary>Overrides the content of specified attribute within a child of of an element with a specified class.</summary>

@@ -30,16 +30,20 @@
         <a href="./shoppingcart.php">
             <img src="images/shopping-cart.png" id="shopping-cart">
             <?php
-
-            // if(isset($_SESSION['cart'])){
-            //     $count = count($_SESSION['cart']);
-            //     echo "<span id="cart_count">$count</span>";
-            // }else{
-            //     echo "<span id="cart_count">0</span>";
-            // }
-            // ?>
-            <span id="cart_count">0</span> 
-            
+                if (isset($_SESSION['cart']))
+                {
+                    
+                }
+                else
+                {
+                    $_SESSION['cart'] = array();
+                }
+            ?>
+            <span id="cart_count">
+                <?php 
+                    echo count($_SESSION['cart']);
+                ?>
+            </span> 
         </a>
     </div>
 </nav>

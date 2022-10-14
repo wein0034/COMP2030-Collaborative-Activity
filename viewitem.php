@@ -66,9 +66,7 @@
                     <div class="buttonHolder">
                         <p>
                             <br>
-                            <input type="submit" id="addToCart" name="add" value="Add to cart">
-                            <!-- hidden input -->
-                            <input type="hidden" name="id" value='$itemID'>
+                            <?php require 'inc/addtocart.inc.php'; ?>
                         </p>
                     </div>
                 </form>
@@ -83,10 +81,6 @@
     $conn = mysqli_connect("localhost", "root", "mysql", "senior");
 
     $itemID = htmlspecialchars($_GET["viewInfo"]);
-
-    // This is included here instead of in the header because it needs to be included AFTER $itemID is initalized. ~J
-    require "inc/addelements.inc.php";
-
     $result = $conn->query("SELECT * 
                             FROM products 
                             WHERE id=$itemID");
@@ -104,6 +98,8 @@
         echo '<script>SetField( "location",      "innerText",    "'.$row["location"].'",                       -1,     1    );</script>';
         echo '<script>SetField( "condition",     "innerText",    "'.$row["cond"].'",                           -1,     1    );</script>';
         echo '<script>SetField( "description",   "innerText",    `'.trim($row["description"]).'`                            );</script>';
-        echo '<script>SetField( "view-imgs",     "src",          "images/'.$row["image"].'"                                        );</script>';
+        echo '<script>SetField( "view-imgs",     "src",          "images/'.$row["image"].'"                                 );</script>';
+
+        echo '<script>SetField( "addtocart",     "value",        "'.$row["id"].'",                             -1,    -1    );</script>';
     } 
 ?>
