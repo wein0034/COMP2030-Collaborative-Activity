@@ -643,6 +643,16 @@ input {
     padding-bottom: 20px;
 }
 
+.rowcartitem{
+    display: flex;
+    /* -ms-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
+    margin: 0 -16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: #666 10px;
+}
+
 /* 3 columns */
 .col-25,
 .col-50,

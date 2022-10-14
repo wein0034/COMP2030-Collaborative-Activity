@@ -46,17 +46,12 @@
             <div class="rowcart">
                 <div class="col-75">
                     <div class="container">
-                        <div class="rowcart">
+                        <div class="rowcartitem">
                             <div class="col-50">
                                 <img src="images/tent.jpg" class="scartimage" width=100%>
                             </div>
                             <div class="col-50">
-                                <br>
-
                                 <h3 id='productName'>Caravan</h3>
-                                <p id='productDescription'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Nulla quam velit, vulputate eu pharetra nec, mattis ac 
-                                    neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.</p>
                                 <p id='productPrice'>$30,000<p>
                             </div>
                         </div>
