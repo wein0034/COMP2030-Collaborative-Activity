@@ -2,7 +2,7 @@
 
 <?php
     // connect to database
-    session_start();
+    require 'sessionstart.inc.php';
     include('dbconn.inc.php');
 
     if (isset($_POST['publish'])) {

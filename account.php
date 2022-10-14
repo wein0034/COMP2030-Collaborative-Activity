@@ -16,7 +16,20 @@
 
     <div class="account">
         <div id="content-wrap">
-        <p><h1>Account</h1><p>
+        <p>
+            <?php
+                require 'inc/sessionstart.inc.php';
+
+                if (isset($_SESSION['username']))
+                {
+                    echo '<h1>Welcome to your account, '.$_SESSION['username'].'</h1>';
+                }
+                else
+                {
+                    echo '<h1>Account</h1>';
+                }
+            ?>
+        <p>
             <div class="row1">
                 <div class="leftHalf">
                     <a href="yourads.html" class="acc-links"><h2> Your Ads </h2></a>

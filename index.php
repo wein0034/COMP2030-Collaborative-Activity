@@ -51,7 +51,7 @@
     <?php require "inc/bottom.inc.php"; ?>
     
     <?php
-        session_start();
+        require 'inc/sessionstart.inc.php';
         echo '<script src="scripts/helperfunctions.js"></script>';
         
         // Create connection

@@ -3,7 +3,7 @@
 <?php
     // the following lines are commented out as including this after it has already been called makes them complain. See viewitem.php for more info. ~J
     // connect to database
-    //session_start();
+    //require 'sessionstart.inc.php';
     //echo '<script> console.log('."ID: ".$itemID.'); </script>';
     //include('dbconn.inc.php');
 

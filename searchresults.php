@@ -20,7 +20,7 @@
     <p id="resultsCounter">test</p>
     <div id="searchResults">
         <?php
-            session_start();
+            require 'inc/sessionstart.inc.php';
             echo '<script src="scripts/helperfunctions.js"></script>';
             
             // Create connection
