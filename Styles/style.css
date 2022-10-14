@@ -752,6 +752,17 @@ hr {
     margin-bottom: 20px;
 }
 
+.shopcartbttns
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.shopcartbttns button
+{
+    margin: 0;
+}
+
 /* Button */
 
 .btns-group {

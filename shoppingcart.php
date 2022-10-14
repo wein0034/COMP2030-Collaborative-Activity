@@ -14,6 +14,21 @@
 <body class="shoppingcart">
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
+    <form method="POST" id="clearcart">
+        
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST")
+            {
+                if ($_POST['clearcart'] > 0)
+                {
+                    $_SESSION['cart'] = array();
+                    $_POST['clearcart'] = -1;
+                    header( "Location: index.php" );
+                }
+            }
+        ?>
+    </form>
+
     <form action="#" class="form shoppingcartcontent">
         <!-- <h1 class="text-center">Registration Form</h1> -->
         <!-- Progress bar -->
@@ -70,7 +85,10 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="shopcartbttns">
+                
+                <button type="submit" name="clearcart" class="btn btn-next width-50 ml-auto" value=1 form="clearcart">Clear Cart</button>
+
                 <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
             </div>
         </div>
