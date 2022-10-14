@@ -22,7 +22,7 @@
 
                 if (isset($_SESSION['username']))
                 {
-                    echo '<h1>Welcome to your account, '.$_SESSION['username'].'</h1>';
+                    echo '<h1>Welcome to your account, '.$_SESSION['username'].'!</h1>';
                 }
                 else
                 {
