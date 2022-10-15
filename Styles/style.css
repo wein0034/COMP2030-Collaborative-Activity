@@ -22,10 +22,17 @@ input[type="submit"], button{
     width: 100%;
     background-color: #acc5a9;
     outline: 0px;
+    cursor: pointer;
 }
 
 #login, #register, #addToCart, #publish, #viewInfo, #back {
     border-radius: 30px;
+}
+
+#login:hover, #register:hover, #addToCart:hover, #publish:hover, #viewInfo:hover, #back:hover, #loginsignup:hover{
+    background-color: rgb(96, 134, 98);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(96, 134, 98);
+    cursor: pointer;
 }
 
 input[type="submit"]:hover, button:hover {
@@ -561,7 +568,7 @@ input {
 }
 
 .progress {
-    background-color: rgb(130, 210, 134);
+    background-color: #acc5a9;
     width: 0%;
     transition: 0.3s;
 }
@@ -591,7 +598,7 @@ input {
 }
 
 .progress-step-active {
-    background-color: rgb(130, 210, 134);
+    background-color: #acc5a9;
     color: #f3f3f3;
 }
 
@@ -785,16 +792,17 @@ hr {
     padding: 0.75rem;
     display: block;
     text-decoration: none;
-    background-color: rgb(130, 210, 134);
+    background-color: #acc5a9;
     color: #f3f3f3;
     text-align: center;
-    border-radius: 0.25rem;
+    border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .btn:hover {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(130, 210, 134);
+    background-color: rgb(96, 134, 98);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(96, 134, 98);
 }
 
 /* bottombar/footer */
