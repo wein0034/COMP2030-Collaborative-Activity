@@ -126,10 +126,10 @@
                                                 echo '<script>SetField("ciImg",   "src",       "images/'.$row["image"].'",   -1, -1);</script>';
                                                 echo '<script>SetField("ciTitle", "innerText", "'.ucwords($row["title"]).'", -1, -1);</script>';
                                                 echo '<script>SetField("ciQuant", "innerText", "Amount: " + "'.$num.'",      -1, -1);</script>';
-                                                echo '<script>SetField("ciPrice", "innerText", "$" + '.number_format($row["price"] * $num, 2).', -1, -1);</script>';
+                                                echo '<script>SetField("ciPrice", "innerText", "$" + "'.number_format($row["price"] * $num, 2).'", -1, -1);</script>';
                                                 echo '<script>SetField("srInner", "value",`'.$row["id"].'`);</script>';
 
-                                                $total += $row["price"];
+                                                $total += $row["price"] * $num;
                                             }
                                         }
                                     }
