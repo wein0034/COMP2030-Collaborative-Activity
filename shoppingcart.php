@@ -95,37 +95,37 @@
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="fname"> First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="David">
+                            <input type="text" id="fname" name="firstname" placeholder="David" required>
                         </div>
                         <div class="col-50input">
                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Smith">
+                            <input type="text" id="lname" name="lastname" placeholder="Smith" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-100input">
                             <label for="adr">Address</label>
-                            <input type="text" id="adr" name="address" placeholder="5 Flinders Street">
+                            <input type="text" id="adr" name="address" placeholder="5 Flinders Street" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="state">State</label>
-                            <input type="text" id="state" name="state" placeholder="SA">
+                            <input type="text" id="state" name="state" placeholder="SA" required>
                         </div>
                         <div class="col-50input">
                             <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Adelaide">
+                            <input type="text" id="city" name="city" placeholder="Adelaide" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="postalc">Postal Code</label>
-                            <input type="text" id="postalc" name="postalc" placeholder="5000">
+                            <input type="text" id="postalc" name="postalc" placeholder="5000" required>
                         </div>
                         <div class="col-50input">
                             <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="0404000000">
+                            <input type="text" id="phone" name="phone" placeholder="0404000000" required>
                         </div>
                     </div>
                 </div>
@@ -164,23 +164,23 @@
                     <div class="rowinput">
                         <div class="col-100input">
                             <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnunmber" placeholder="0000 0000 0000 0000">
+                            <input type="text" id="ccnum" name="cardnunmber" placeholder="0000 0000 0000 0000" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="mmyy">Month/Year</label>
-                            <input type="text" id="mmyy" name="mmyy" placeholder="MMYY">
+                            <input type="text" id="mmyy" name="mmyy" placeholder="MMYY" required>
                         </div>
                         <div class="col-50input">
                             <label for="cvv">CVV/Security Code</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="302">
+                            <input type="text" id="cvv" name="cvv" placeholder="302" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="David Smith">
+                            <input type="text" id="cname" name="cardname" placeholder="David Smith" required>
                         </div>
                     </div>
                     
