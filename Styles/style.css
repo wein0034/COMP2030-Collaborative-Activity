@@ -793,11 +793,12 @@ hr {
     display: block;
     text-decoration: none;
     background-color: #acc5a9;
-    color: #f3f3f3;
+    color: #000;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
