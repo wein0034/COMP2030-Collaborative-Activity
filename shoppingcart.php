@@ -1,4 +1,4 @@
-<!-- contributor: Tatiana Roa Jaramillo roaj0001 -->
+<!-- contributor: Tatiana Roa Jaramillo roaj0001, Julian Weinrich wein0034 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
         ?>
     </form>
 
-    <form action="#" class="form shoppingcartcontent">
+    <div class="form shoppingcartcontent">
         <!-- <h1 class="text-center">Registration Form</h1> -->
         <!-- Progress bar -->
         <div class="progressbar">
@@ -45,16 +45,91 @@
         <div class="form-step form-step-active">
             <div class="rowcart">
                 <div class="col-75">
-                    <div class="container">
-                        <div class="rowcartitem">
-                            <div class="col-50">
-                                <img src="images/tent.jpg" class="scartimage" width=100%>
-                            </div>
-                            <div class="col-50">
-                                <h3 id='productName'>Caravan</h3>
-                                <p id='productPrice'>$30,000<p>
-                            </div>
-                        </div>
+                    <div id="cart items">
+                        <?php
+                            $total = 0;
+                            if (count($_SESSION['cart']) > 0)
+                            {
+                                require 'inc/sessionstart.inc.php';
+                                echo '<script src="scripts/helperfunctions.js"></script>';
+
+                                // Create connection
+                                $conn = mysqli_connect("localhost", "root", "mysql", "senior");
+                                // Check connection
+                                if ($conn->connect_error) 
+                                {
+                                    echo '<script>CounterDisplay("Connection to database failed.");</script>';
+                                    die("Connection failed: " . $conn->connect_error);
+                                }
+
+                                $sql = "SELECT * 
+                                        FROM products";
+                                        
+                                $result = $conn->query($sql);
+
+                                if ($result->num_rows > 0) 
+                                {
+                                    $done = array();
+
+                                    foreach ($_SESSION['cart'] as $id)
+                                    {
+                                        // skip the item if it has already been done
+                                        $skip = false;
+                                        foreach ($done as $item)
+                                        {
+                                            if ($item == $id)
+                                            {
+                                                $skip = true;
+                                                break;
+                                            }
+                                        }
+                                        if ($skip)
+                                        {
+                                            continue;
+                                        }
+
+                                        // count how many of the item are in the cart
+                                        $num = 0;
+                                        foreach ($_SESSION['cart'] as $item)
+                                        {
+                                            if ($item == $id)
+                                            {
+                                                $num++;
+                                            }
+                                        }
+
+                                        // add the item to the "done" array
+                                        $done[] = $id;
+
+                                        // load the item on screen and set its values
+                                        $sql = "SELECT * 
+                                                FROM products
+                                                WHERE id = $id";
+                                        
+                                        $result = $conn->query($sql);
+                                        while($row = $result->fetch_assoc()) 
+                                        {
+                                            if ($row["id"] == $id)
+                                            {
+                                                include "inc/cartitem.inc.php";
+                                                echo '<script>SetField("ciImg",   "src",       "images/'.$row["image"].'",   -1, -1);</script>';
+                                                echo '<script>SetField("ciTitle", "innerText", "'.ucwords($row["title"]).'", -1, -1);</script>';
+                                                echo '<script>SetField("ciQuant", "innerText", "Amount: " + "'.$num.'",      -1, -1);</script>';
+                                                echo '<script>SetField("ciPrice", "innerText", "$" + '.number_format($row["price"], 2).' * '.$num.', -1, -1);</script>';
+                                                echo '<script>SetField("srInner", "value",`'.$row["id"].'`);</script>';
+
+                                                $total += $row["price"];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                echo '<h3 class="cartemptymessage"><a href="index.php">Nothing in cart, why not add something?</a></h3>';
+                            }
+                        ?>
+                        
                     </div>
                 </div>
                 <!-- Summary -->
@@ -65,16 +140,18 @@
                         <hr>
                         <div class="rowcart">
                             <div class="col-50">
-                            <p id='left'>Subtotal</p>
-                            <p id='left'>Shipping</p>
-                            <p id='left'>Taxes</p>
-                            <p id='left' class="bold">TOTAL</p>
+                                <p id='left'>Subtotal</p>
+                                <p id='left'>Shipping</p>
+                                <p id='left'>Taxes</p>
+                                <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                            <p id='right'>$28,000</p>
-                            <p id='right'>$1,000</p>
-                            <p id='right'>$2,000</p>
-                            <p id='right' class="bold">$31,000</p>
+                                <?php
+                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
+                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -143,10 +220,12 @@
                             <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                            <p id='right'>$28,000</p>
-                            <p id='right'>$1,000</p>
-                            <p id='right'>$2,000</p>
-                            <p id='right' class="bold">$31,000</p>
+                                <?php
+                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
+                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -199,10 +278,12 @@
                             <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                            <p id='right'>$28,000</p>
-                            <p id='right'>$1,000</p>
-                            <p id='right'>$2,000</p>
-                            <p id='right' class="bold">$31,000</p>
+                                <?php
+                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
+                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
+                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -213,7 +294,7 @@
                 <a href="#" class="btn btn-next">Next</a>
             </div>
         </div>
-    </form>
+        </div>
     <?php require_once "inc/bottom.inc.php"; ?>
 </body>
 

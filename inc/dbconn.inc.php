@@ -6,6 +6,7 @@
     define('PASSWORD', 'mysql');
     define('HOST', 'localhost');
     define('DATABASE', 'senior');
+    $connection;
     try {
         $connection = new PDO("mysql:host=".HOST.";dbname=".DATABASE, USER, PASSWORD);
     }

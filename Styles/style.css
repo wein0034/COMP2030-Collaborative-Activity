@@ -517,7 +517,9 @@ a.acc-links:hover{
     margin: 0;
     display: grid;
     place-items: center;
+    align-content: center;
     min-height: 100vh;
+    
 }
 
 /* Global Stylings */
@@ -778,6 +780,54 @@ hr {
 .shopcartbttns button
 {
     margin: 0;
+}
+
+.cartitem
+{
+}
+
+.ciButton
+{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.ciImg
+{
+    border-radius: 25%;
+}
+
+.ciTitle
+{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.ciNums
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ciQuant
+{
+    margin-block: 0px;
+}
+.ciPrice
+{
+    margin-block: 0px;
+}
+
+.cartemptymessage
+{
+    text-align: center;
 }
 
 /* Button */
