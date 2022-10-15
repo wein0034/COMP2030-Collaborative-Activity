@@ -165,9 +165,15 @@
             </div>
             <div class="shopcartbttns">
                 
-                <button type="submit" name="clearcart" class="btn btn-next width-50 ml-auto" value=1 form="clearcart">Clear Cart</button>
+                
 
-                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                <?php
+                    if (count($_SESSION['cart']) > 0)
+                    {
+                        echo '<button type="submit" name="clearcart" class="btn btn-next width-50 ml-auto" value=1 form="clearcart">Clear Cart</button>';
+                        echo '<a href="#" class="btn btn-next width-50 ml-auto">Next</a>';
+                    }
+                ?>
             </div>
         </div>
 
