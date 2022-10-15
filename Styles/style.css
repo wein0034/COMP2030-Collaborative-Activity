@@ -515,11 +515,11 @@ a.acc-links:hover{
 .shoppingcart {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 /* Global Stylings */
