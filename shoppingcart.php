@@ -47,7 +47,18 @@
                 <div class="col-75">
                     <div id="cart items">
                         <?php
+                            // function use to display the price breakdown
                             $total = 0;
+                            function DisplayPrice()
+                            {
+                                global $total;
+                                echo '<p id="right">$'.number_format($total, 2).'</p>';
+                                echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
+                                echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
+                                echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
+                            }
+
+                            // display the items in the cart
                             if (count($_SESSION['cart']) > 0)
                             {
                                 require 'inc/sessionstart.inc.php';
@@ -115,7 +126,7 @@
                                                 echo '<script>SetField("ciImg",   "src",       "images/'.$row["image"].'",   -1, -1);</script>';
                                                 echo '<script>SetField("ciTitle", "innerText", "'.ucwords($row["title"]).'", -1, -1);</script>';
                                                 echo '<script>SetField("ciQuant", "innerText", "Amount: " + "'.$num.'",      -1, -1);</script>';
-                                                echo '<script>SetField("ciPrice", "innerText", "$" + '.number_format($row["price"], 2).' * '.$num.', -1, -1);</script>';
+                                                echo '<script>SetField("ciPrice", "innerText", "$" + '.number_format($row["price"] * $num, 2).', -1, -1);</script>';
                                                 echo '<script>SetField("srInner", "value",`'.$row["id"].'`);</script>';
 
                                                 $total += $row["price"];
@@ -146,12 +157,7 @@
                                 <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                                <?php
-                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
-                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
-                                ?>
+                                <?php DisplayPrice() ?>
                             </div>
                         </div>
                     </div>
@@ -220,12 +226,7 @@
                             <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                                <?php
-                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
-                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
-                                ?>
+                                <?php DisplayPrice() ?>
                             </div>
                         </div>
                     </div>
@@ -278,12 +279,7 @@
                             <p id='left' class="bold">TOTAL</p>
                             </div>
                             <div class="col-50 right">
-                                <?php
-                                    echo '<p id="right">$'.number_format($total, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.05, 2).'</p>';
-                                    echo '<p id="right">$'.number_format($total * 0.1, 2).'</p>';
-                                    echo '<p id="right" class="bold">$'.number_format($total * 1.15, 2).'</p>';
-                                ?>
+                                <?php DisplayPrice() ?>
                             </div>
                         </div>
                     </div>
