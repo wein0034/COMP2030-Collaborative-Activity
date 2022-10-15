@@ -32,7 +32,7 @@
         <p>
             <div class="row1">
                 <div class="leftHalf">
-                    <a href="yourads.html" class="acc-links"><h2> Your Ads </h2></a>
+                    <a href="404.php" class="acc-links"><h2> Your Ads </h2></a>
                     <h3 id='productName'>Caravan</h3>
                     <p id='productPrice'>$30,000<p>
                     <p id='productDescription'> 
@@ -47,7 +47,7 @@
 
                 
                 <div class="rightHalf">
-                    <a href="yourorders.html" class="acc-links"><h2> Your Orders </h2></a>
+                    <a href="404.php" class="acc-links"><h2> Your Orders </h2></a>
                     <h3 id="productName">Tent</h3>
                     <p id='productPrice'>$150<p>
                     <p id='productDescription'> 
@@ -63,12 +63,12 @@
                 
             <div class="row2">
                 <div class="leftHalfR2">
-                <h2 id='row2Tittle'> <a href="favourites.html" class="acc-links">Favourites </h2></a>
+                <h2 id='row2Tittle'> <a href="404.php" class="acc-links">Favourites </h2></a>
                     <img src="images/favourite.png" class="favouriteIcon">
                 </div>
                 
                 <div class="rightHalfR2">
-                    <h2 id='row2Tittle'><a href="settings.html" class="acc-links">Settings </h2></a>
+                    <h2 id='row2Tittle'><a href="404.php" class="acc-links">Settings </h2></a>
                     <img src="images/setting.png" class="settingIcon">
                 </div>
             </div>
