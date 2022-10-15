@@ -121,11 +121,11 @@
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="postalc">Postal Code</label>
-                            <input type="text" id="postalc" name="postalc" placeholder="5000" required>
+                            <input type="text" id="postalc" name="postalc" placeholder="5000" maxlength="4" required>
                         </div>
                         <div class="col-50input">
                             <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="0404000000" required>
+                            <input type="text" id="phone" name="phone" placeholder="0404000000" maxlength="10" required>
                         </div>
                     </div>
                 </div>
@@ -164,17 +164,17 @@
                     <div class="rowinput">
                         <div class="col-100input">
                             <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnunmber" placeholder="0000 0000 0000 0000" required>
+                            <input type="text" id="ccnum" name="cardnunmber" placeholder="0000 0000 0000 0000" maxlength="16" required>
                         </div>
                     </div>
                     <div class="rowinput">
                         <div class="col-50input">
                             <label for="mmyy">Month/Year</label>
-                            <input type="text" id="mmyy" name="mmyy" placeholder="MMYY" required>
+                            <input type="text" id="mmyy" name="mmyy" placeholder="MMYY" maxlength="4" required>
                         </div>
                         <div class="col-50input">
                             <label for="cvv">CVV/Security Code</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="302" required>
+                            <input type="text" id="cvv" name="cvv" placeholder="302" maxlength="3" required>
                         </div>
                     </div>
                     <div class="rowinput">
