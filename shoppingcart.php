@@ -139,8 +139,7 @@
                             {
                                 echo '<h3 class="cartemptymessage"><a href="index.php">Nothing in cart, why not add something?</a></h3>';
                             }
-                        ?>
-                        
+                        ?> 
                     </div>
                 </div>
                 <!-- Summary -->
@@ -164,9 +163,6 @@
                 </div>
             </div>
             <div class="shopcartbttns">
-                
-                
-
                 <?php
                     if (count($_SESSION['cart']) > 0)
                     {
