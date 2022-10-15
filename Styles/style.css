@@ -872,6 +872,12 @@ hr {
     padding: 0px;
 }
 
+.collapsible.sr:hover{
+    background-color: rgb(96, 134, 98);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgb(96, 134, 98);
+    cursor: pointer;
+}
+
 .srInner {
     overflow: hidden;
     
