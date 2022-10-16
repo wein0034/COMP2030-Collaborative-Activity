@@ -86,8 +86,32 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `password`, `email`) VALUES
 (1, 'User 1', 'Password123', 'user1@email.com'),
-(2, 'Admin', 'testing123', 'admin@admin.com'),
-(3, 'User 2', 'thisismypassword', 'user2@testing.com');
+(4, 'Admin', '$2y$10$Sv6lIKchhmaA4wukW.KG3uD3uN4.mkqTQiDLeLWhNxg1Y4yIuC2aK', 'admin@admin.com'),
+(5, 'User 2', '$2y$10$2dXVU.M8HuuFnpJPfS5aV.eUcUvluTnjgLN3TTdoF5/sVSY3DPYQe', 'user2@testing.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
+  `lastname` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
+  `address` varchar(500) COLLATE utf8mb4_general_ci NOT NULL,
+  `state` varchar(3) COLLATE utf8mb4_general_ci NOT NULL,
+  `city` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `postalc` int NOT NULL,
+  `phone` int NOT NULL,
+  `cardnumber` int NOT NULL,
+  `mmyy` int NOT NULL,
+  `cvv` int NOT NULL,
+  `cardname` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=1;
+
+-- --------------------------------------------------------
 
 --
 -- Indexes for dumped tables

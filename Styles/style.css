@@ -399,14 +399,13 @@ img#viewimg-lrg {
     padding-top: 100px;
 }
 
-a.acc-links {
+a.acc-links, .cartemptymessage a {
     text-decoration: none;
     color: rgb(96, 134, 98);
 }
 
-a.acc-links:hover{
+a.acc-links:hover, .cartemptymessage a:hover{
     text-decoration: underline;
-
 }
 
 .account{
@@ -721,6 +720,10 @@ hr {
     width: 80%;
 }
 
+.purchase-proccessed{
+    text-align: center;
+}
+
 /* Summary */
 
 #summary {
@@ -829,6 +832,7 @@ hr {
 {
     text-align: center;
 }
+
 
 /* Button */
 
@@ -1208,4 +1212,36 @@ img#Vehicle, img#Furniture, img#Supplies, img#Services
 
 #back{
     width: 250px;
+}
+
+/* thankyou */
+
+.purchase-proccessed {
+    width: 1800px;  
+    height: 100%;
+    position: relative;
+    padding-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.purchase-bg {
+    display: block;
+    height: 550px;
+    background-image: url("../images/camping.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 30px;
+}
+
+.purchase-message {
+    position: absolute;
+    width: 1000px;
+    border-radius: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
 }

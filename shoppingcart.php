@@ -14,9 +14,10 @@
 <body class="shoppingcart">
     <?php require_once "inc/top.inc.php"; ?> 
     <?php require_once "inc/search.inc.php"; ?>
+
     <form method="POST" id="clearcart">
-        
         <?php
+        if (isset($_POST['clearcart'])){
             if ($_SERVER["REQUEST_METHOD"] == "POST")
             {
                 if ($_POST['clearcart'] > 0)
@@ -26,8 +27,11 @@
                     header( "Location: index.php" );
                 }
             }
+        }
         ?>
     </form>
+
+    <?php require_once "inc/cartdetails.inc.php"; ?>
 
     <div class="form shoppingcartcontent">
         <!-- <h1 class="text-center">Registration Form</h1> -->
@@ -174,71 +178,72 @@
         </div>
 
         <!-- Shipping Details -->
-        <div class="form-step">
-            <div class="rowcart">
-                <div class="col-75">
-                    <div class="rowinput">
-                        <div class="col-50input">
-                            <label for="fname"> First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="David" required>
-                        </div>
-                        <div class="col-50input">
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Smith" required>
-                        </div>
-                    </div>
-                    <div class="rowinput">
-                        <div class="col-100input">
-                            <label for="adr">Address</label>
-                            <input type="text" id="adr" name="address" placeholder="5 Flinders Street" required>
-                        </div>
-                    </div>
-                    <div class="rowinput">
-                        <div class="col-50input">
-                            <label for="state">State</label>
-                            <input type="text" id="state" name="state" placeholder="SA" required>
-                        </div>
-                        <div class="col-50input">
-                            <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Adelaide" required>
-                        </div>
-                    </div>
-                    <div class="rowinput">
-                        <div class="col-50input">
-                            <label for="postalc">Postal Code</label>
-                            <input type="text" id="postalc" name="postalc" placeholder="5000" maxlength="4" required>
-                        </div>
-                        <div class="col-50input">
-                            <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="0404000000" maxlength="10" required>
-                        </div>
-                    </div>
-                </div>
-                <!-- Summary -->
-                <div class="col-25">
-                    <div class="summarycontainer">
-                        <br>
-                        <p id="summary">Summary</p>
-                        <hr>
-                        <div class="rowcart">
-                            <div class="col-50">
-                            <p id='left'>Subtotal</p>
-                            <p id='left'>Shipping</p>
-                            <p id='left'>Taxes</p>
-                            <p id='left' class="bold">TOTAL</p>
+        <form action="" method="POST">
+            <div class="form-step">
+                <div class="rowcart">
+                    <div class="col-75">
+                        <div class="rowinput">
+                            <div class="col-50input">
+                                <label for="fname"> First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="David" required>
                             </div>
-                            <div class="col-50 right">
-                                <?php DisplayPrice() ?>
+                            <div class="col-50input">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Smith" required>
+                            </div>
+                        </div>
+                        <div class="rowinput">
+                            <div class="col-100input">
+                                <label for="adr">Address</label>
+                                <input type="text" id="adr" name="address" placeholder="5 Flinders Street" required>
+                            </div>
+                        </div>
+                        <div class="rowinput">
+                            <div class="col-50input">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="SA" required>
+                            </div>
+                            <div class="col-50input">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Adelaide" required>
+                            </div>
+                        </div>
+                        <div class="rowinput">
+                            <div class="col-50input">
+                                <label for="postalc">Postal Code</label>
+                                <input type="text" id="postalc" name="postalc" placeholder="5000" maxlength="4" required>
+                            </div>
+                            <div class="col-50input">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name="phone" placeholder="0404000000" maxlength="10" required>
                             </div>
                         </div>
                     </div>
+                    <!-- Summary -->
+                    <div class="col-25">
+                        <div class="summarycontainer">
+                            <br>
+                            <p id="summary">Summary</p>
+                            <hr>
+                            <div class="rowcart">
+                                <div class="col-50">
+                                <p id='left'>Subtotal</p>
+                                <p id='left'>Shipping</p>
+                                <p id='left'>Taxes</p>
+                                <p id='left' class="bold">TOTAL</p>
+                                </div>
+                                <div class="col-50 right">
+                                    <?php DisplayPrice() ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
                 </div>
             </div>
-            <div class="btns-group">
-                <a href="#" class="btn btn-prev">Previous</a>
-                <a href="#" class="btn btn-next">Next</a>
-            </div>
-        </div>
         <!-- Payment Options -->
         <div class="form-step">
             <div class="rowcart">
@@ -246,7 +251,7 @@
                     <div class="rowinput">
                         <div class="col-100input">
                             <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnunmber" placeholder="0000 0000 0000 0000" maxlength="16" required>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="0000 0000 0000 0000" maxlength="16" required>
                         </div>
                     </div>
                     <div class="rowinput">
@@ -265,6 +270,7 @@
                             <input type="text" id="cname" name="cardname" placeholder="David Smith" required>
                         </div>
                     </div>
+
                     
                 </div>
                 <!-- Summary -->
@@ -287,9 +293,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="btns-group">
                 <a href="#" class="btn btn-prev">Previous</a>
-                <a href="#" class="btn btn-next">Next</a>
+                <input type="submit" class="btn btn-next" id="placeOrder" name="placeOrder" value="Place Order"></a>
+            </form>  
+                <!-- <a href="#" class="btn btn-next">Next</a> -->
+                       
             </div>
         </div>
         </div>

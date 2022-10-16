@@ -31,17 +31,18 @@
         $valid_extension = array("png","jpeg","jpg");
 
         // checking image size not too large
-        if ($_FILES['image']['size'] > 500000) {
-            echo 'Sorry, your file is too large.';
-            $uploadOk = 0;
-          }
-
-        // moving the image to folder and executing the statement to upload all info into database
-        if(in_array($file_extension, $valid_extension)) {
-            if(move_uploaded_file($_FILES['image']['tmp_name'],$target_file)) { 
-                $statement->execute(array($title, $price,$cond,$category,$location,$description,$filename));
-            }
+        define('MB', 1048576);
+        if ($_FILES['image']['size'] > 10*MB) {
+            echo '<p class="error">Sorry, your file is too large, please upload images less than 10MB.</p>'; 
         }
+        else {
+            // moving the image to folder and executing the statement to upload all info into database
+            if(in_array($file_extension, $valid_extension)) {
+                if(move_uploaded_file($_FILES['image']['tmp_name'],$target_file)) { 
+                    $statement->execute(array($title, $price,$cond,$category,$location,$description,$filename));
+                }
+            }
         echo '<p class="success">Item listed!</p>'; 
+        }
     }
 ?>

@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="rich0485, roaj0001, wein0034">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/imagepreview.js" defer></script>
 </head>
 
 <body class="listitem-background">
@@ -28,7 +29,7 @@
             <div class="sellpricecondition">
                 <div id="sellprice">
                     <label><b>Price ($)</b></label><br>
-                    <input name="price" id="price" min="1" max="100000" type="number" required>
+                    <input name="price" id="price" min="1" max="100000" step=".01" type="number" required>
                 </div>
                 <div id="sellcondition">
                     <label><b>Condition</b></label><br>
