@@ -1,4 +1,4 @@
-<!-- contributor: Tatiana Roa Jaramillo roaj0001, Julian Weinrich wein0034 -->
+<!-- contributor: Tatiana Roa Jaramillo roaj0001, Julian Weinrich wein0034, Jessica Richardson rich0485 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -298,7 +298,6 @@
                 <a href="#" class="btn btn-prev">Previous</a>
                 <input type="submit" class="btn btn-next" id="placeOrder" name="placeOrder" value="Place Order"></a>
             </form>  
-                <!-- <a href="#" class="btn btn-next">Next</a> -->
                        
             </div>
         </div>
