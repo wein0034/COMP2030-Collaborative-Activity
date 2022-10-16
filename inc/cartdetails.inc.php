@@ -40,6 +40,8 @@
             if ($result) {
                 header("Location: ./thankyou.php");
                 echo '<div class="success">Your purchase has been processed! You will receive an email shortly verifying this transaction</div>';
+                    $_SESSION['cart'] = array();
+                    $_POST['clearcart'] = -1;     
             }
             else {
                 echo '<div class="error">Something went wrong, try again later.</div>';

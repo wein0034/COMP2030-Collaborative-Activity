@@ -104,12 +104,19 @@ CREATE TABLE `cart` (
   `city` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `postalc` int NOT NULL,
   `phone` int NOT NULL,
-  `cardnumber` int NOT NULL,
+  `cardnumber` varchar(255) NOT NULL,
   `mmyy` int NOT NULL,
   `cvv` int NOT NULL,
   `cardname` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=1;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `firstname`, `lastname`, `address`, `state`, `city`, `postalc`, `phone`, `cardnumber`, `mmyy`, `cvv`, `cardname`) VALUES
+(19, 'Bob', 'Smith', '5 Flinders St', 'SA', 'Adelaide', 5123, 1234567891, '$2y$10$tovp1Dr9BtVyCQkBQUooke4/4WTmKkmecr043gUMZO1l49Fpb5l1K', 2261, 123, 'Bob Smith');
 
 -- --------------------------------------------------------
 
