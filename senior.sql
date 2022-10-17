@@ -72,7 +72,7 @@ INSERT INTO `products` (`title`, `price`, `cond`, `category`, `location`, `descr
 --
 -- Table structure for table `users`
 --
-'
+
 CREATE TABLE `users` (
   `id` int UNSIGNED NOT NULL,
   `name` varchar(25) COLLATE utf8mb3_unicode_ci NOT NULL,
